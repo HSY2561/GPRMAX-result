@@ -1,0 +1,119 @@
+{
+  "source_pvsm": "C:\\Users\\user\\Documents\\Codex\\2026-11-10\\jian\\work\\github_GPRMAX-result_readonly\\model\\东至南模型.pvsm",
+  "model_directory": "C:\\Users\\user\\Documents\\Codex\\2026-11-10\\jian\\work\\github_GPRMAX-result_readonly\\model\\paraview",
+  "coordinate_system": {
+    "X": "length (m)",
+    "Y": "face width (m)",
+    "Z": "thickness (m)"
+  },
+  "units": "m",
+  "referenced_vtp_count": 7,
+  "missing_vtp": [],
+  "meshes": [
+    {
+      "file": "concrete_slab.vtp",
+      "resolved_path": "C:\\Users\\user\\Documents\\Codex\\2026-11-10\\jian\\work\\github_GPRMAX-result_readonly\\model\\paraview\\concrete_slab.vtp",
+      "n_points": 8,
+      "n_cells": 6,
+      "bounds_m": [
+        0.0,
+        3.0,
+        0.0,
+        2.0,
+        0.0,
+        0.4000000059604645
+      ],
+      "boundary_or_nonmanifold_edge_cells": 0
+    },
+    {
+      "file": "face_A_length.vtp",
+      "resolved_path": "C:\\Users\\user\\Documents\\Codex\\2026-11-10\\jian\\work\\github_GPRMAX-result_readonly\\model\\paraview\\face_A_length.vtp",
+      "n_points": 512,
+      "n_cells": 136,
+      "bounds_m": [
+        0.039999961853027344,
+        2.9600000381469727,
+        0.23999999463558197,
+        1.7599999904632568,
+        0.3700000047683716,
+        0.38999998569488525
+      ],
+      "boundary_or_nonmanifold_edge_cells": 512
+    },
+    {
+      "file": "face_A_width.vtp",
+      "resolved_path": "C:\\Users\\user\\Documents\\Codex\\2026-11-10\\jian\\work\\github_GPRMAX-result_readonly\\model\\paraview\\face_A_width.vtp",
+      "n_points": 768,
+      "n_cells": 204,
+      "bounds_m": [
+        0.23999999463558197,
+        2.759999990463257,
+        0.04000002145767212,
+        1.9600000381469727,
+        0.3500000238418579,
+        0.3700000047683716
+      ],
+      "boundary_or_nonmanifold_edge_cells": 768
+    },
+    {
+      "file": "face_B_length.vtp",
+      "resolved_path": "C:\\Users\\user\\Documents\\Codex\\2026-11-10\\jian\\work\\github_GPRMAX-result_readonly\\model\\paraview\\face_B_length.vtp",
+      "n_points": 512,
+      "n_cells": 136,
+      "bounds_m": [
+        0.039999961853027344,
+        2.9600000381469727,
+        0.23999999463558197,
+        1.7599999904632568,
+        0.029999999329447746,
+        0.04999999701976776
+      ],
+      "boundary_or_nonmanifold_edge_cells": 512
+    },
+    {
+      "file": "face_B_width.vtp",
+      "resolved_path": "C:\\Users\\user\\Documents\\Codex\\2026-11-10\\jian\\work\\github_GPRMAX-result_readonly\\model\\paraview\\face_B_width.vtp",
+      "n_points": 768,
+      "n_cells": 204,
+      "bounds_m": [
+        0.23999999463558197,
+        2.759999990463257,
+        0.04000002145767212,
+        1.9600000381469727,
+        0.04999999701976776,
+        0.07000000029802322
+      ],
+      "boundary_or_nonmanifold_edge_cells": 768
+    },
+    {
+      "file": "foam_defects_all.vtp",
+      "resolved_path": "C:\\Users\\user\\Documents\\Codex\\2026-11-10\\jian\\work\\github_GPRMAX-result_readonly\\model\\paraview\\foam_defects_all.vtp",
+      "n_points": 23128,
+      "n_cells": 46122,
+      "bounds_m": [
+        1.350000023841858,
+        2.674935817718506,
+        0.32506418228149414,
+        1.658237099647522,
+        0.07500000298023224,
+        0.3449999988079071
+      ],
+      "boundary_or_nonmanifold_edge_cells": 0
+    },
+    {
+      "file": "foam_plates_all.vtp",
+      "resolved_path": "C:\\Users\\user\\Documents\\Codex\\2026-11-10\\jian\\work\\github_GPRMAX-result_readonly\\model\\paraview\\foam_plates_all.vtp",
+      "n_points": 24,
+      "n_cells": 18,
+      "bounds_m": [
+        1.25,
+        2.75,
+        0.09000000357627869,
+        1.9600000381469727,
+        0.07000000029802322,
+        0.3799999952316284
+      ],
+      "boundary_or_nonmanifold_edge_cells": 0
+    }
+  ]
+}
