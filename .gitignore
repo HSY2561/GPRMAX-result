@@ -1,0 +1,10 @@
+# Ignore transient per-run outputs; curated HDF5/gathered results live under simulation/results.
+simulation/inputs/*.h5
+simulation/inputs/*.out
+simulation/inputs/*.log
+__pycache__/
+*.pyc
+# Ignore uncurated smoke files created directly under simulation/.
+simulation/current_model_*.h5
+simulation/current_model_*.in
+simulation/current_model_*.png

@@ -1,0 +1,27 @@
+{
+  "dx_m": 0.02,
+  "domain_m": [
+    3.2,
+    2.2,
+    0.6
+  ],
+  "origin_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "shape_nxyz": [
+    160,
+    110,
+    30
+  ],
+  "cell_count": 528000,
+  "geometry_file": "simulation\\geometry_20mm\\geometry.h5",
+  "materials_file": "simulation\\geometry_20mm\\materials.json",
+  "material_counts": {
+    "0": 292397,
+    "1": 228000,
+    "2": 4592,
+    "3": 3011
+  }
+}

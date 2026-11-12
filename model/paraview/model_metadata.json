@@ -1,0 +1,85 @@
+{
+  "coordinate_system": {
+    "X": "length",
+    "Y": "face width",
+    "Z": "thickness"
+  },
+  "slab_m": {
+    "length_X": 3.0,
+    "width_Y": 2.0,
+    "thickness_Z": 0.4
+  },
+  "reinforcement": {
+    "steel": "HRB400",
+    "diameter_m": 0.02,
+    "cover_m": 0.04,
+    "spacing_m": 0.5,
+    "layers": [
+      "face_A",
+      "face_B"
+    ],
+    "face_A": {
+      "X_direction": {
+        "count": 4,
+        "bar_length_m": 2.92,
+        "y_centres_m": [
+          0.25,
+          0.75,
+          1.25,
+          1.75
+        ],
+        "z_m": 0.38000000000000006,
+        "row": "outer"
+      },
+      "Y_direction": {
+        "count": 6,
+        "bar_length_m": 1.92,
+        "x_centres_m": [
+          0.25,
+          0.75,
+          1.25,
+          1.75,
+          2.25,
+          2.75
+        ],
+        "z_m": 0.36000000000000004,
+        "row": "inner"
+      }
+    },
+    "face_B": {
+      "X_direction": {
+        "count": 4,
+        "bar_length_m": 2.92,
+        "y_centres_m": [
+          0.25,
+          0.75,
+          1.25,
+          1.75
+        ],
+        "z_m": 0.04,
+        "row": "outer"
+      },
+      "Y_direction": {
+        "count": 6,
+        "bar_length_m": 1.92,
+        "x_centres_m": [
+          0.25,
+          0.75,
+          1.25,
+          1.75,
+          2.25,
+          2.75
+        ],
+        "z_m": 0.06,
+        "row": "inner"
+      }
+    }
+  },
+  "files": [
+    "concrete_slab.vtp",
+    "face_A_length.vtp",
+    "face_A_width.vtp",
+    "face_B_length.vtp",
+    "face_B_width.vtp"
+  ]
+}

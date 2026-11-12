@@ -1,1 +1,51 @@
 # GPRMAX-result
+
+钢筋混凝土探地雷达正演项目，模型来自 ParaView/SolidWorks 工作流。
+
+## 当前模型
+
+- 混凝土板：3.0 m × 2.0 m × 0.4 m，坐标单位为 m。
+- 双层 HRB400 钢筋：直径 20 mm，保护层参考厚度 40 mm，间距 500 mm。
+- 泡沫缺陷：23 个 EPS 立方体/球体对象。
+- 泡沫板：3 个，参数见 `model/paraview/foam_plates_metadata.json`。
+- ParaView 状态：`model/东至南模型.pvsm`。
+
+## gprMax 与 GPU
+
+本机环境已经实测连接到 CUDA：NVIDIA GeForce RTX 5060 8 GB、CUDA Toolkit 13.4、gprMax 4.0.1、PyCUDA 2026.1。运行 gprMax 前需要先调用 VS2022 BuildTools 的 `VsDevCmd.bat`，否则 nvcc 找不到 `cl.exe`。统一入口是 `simulation/run_gpu.cmd`。
+
+实际日志包含：`CUDA backend using Device 0: NVIDIA GeForce RTX 5060`。
+
+## 模型检查与体素化
+
+```powershell
+python simulation/scripts/inspect_paraview_model.py
+python simulation/scripts/voxelize_current_model.py --dx 0.005 --outdir simulation/geometry_5mm
+```
+
+当前体素材料为混凝土、空气、钢筋和 EPS。钢筋 VTP 表面存在开放边，因此体素化脚本按模型尺寸和钢筋圆柱参数生成封闭等效体素；原始 VTP 仍保留在 `model/paraview`。
+
+## 正演参数
+
+- 中心频率：2.5 GHz，Ricker 波形。
+- 天线：Z 极化理想 Hertzian dipole 代理，Tx/Rx 间距 40 mm；实际 CK-2500 天线结构、极化和带宽仍需实测校准。
+- 扫描方向：X/试块长度方向。
+- 扫描间距：100 mm，31 道。
+- FDTD 域：3.4 m × 2.4 m × 0.8 m，几何体插入点为 (0.1, 0.1, 0.1) m。
+- 材料初值：混凝土 εr=6、σ=0.01 S/m；EPS εr=1.05、σ=0；空气 εr=1；钢筋 σ=1e6 S/m 的有限导电近似。
+
+## 已完成结果
+
+`simulation/results/20mm_bscan/` 包含 20 mm 验证网格的单道 HDF5、31 道原始 HDF5、合成 Ez B-scan 和参数记录。20 mm 网格只用于验证导入、GPU 求解和输出链路；它不能作为最终定量结果，因为钢筋和 2.5 GHz 波长均欠分辨。
+
+5 mm 全尺寸单道已经在 RTX 5060 上完成，约 5222 万网格单元，显存估算约 3.9 GB。5 mm 全长度 31 道 B-scan 正演正在运行/完成后将放入 `simulation/results/5mm_bscan/`。
+
+## 运行命令
+
+```powershell
+cmd /d /c "simulation\run_gpu.cmd simulation\inputs\current_model_20mm_ascan.in -gpu 0 --allow-underresolved"
+cmd /d /c "simulation\run_gpu.cmd simulation\inputs\current_model_20mm_bscan.in -n 31 -gpu 0 --allow-underresolved"
+cmd /d /c "simulation\run_gpu.cmd simulation\inputs\current_model_5mm_ascan.in -gpu 0 --allow-underresolved"
+```
+
+`--allow-underresolved` 是当前钢筋有限电导率近似下的数值链路选项。正式定量结果需要进一步做钢筋材料模型、天线参数和网格收敛性校准。
