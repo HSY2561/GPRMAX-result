@@ -17,6 +17,7 @@ def main() -> None:
     ap.add_argument("--prefix", required=True)
     ap.add_argument("--ntraces", type=int, required=True)
     ap.add_argument("--output-dir", type=Path, required=True)
+    ap.add_argument("--output-stem", default="current_model_20mm_bscan")
     args = ap.parse_args()
     args.output_dir.mkdir(parents=True, exist_ok=True)
     traces = []
@@ -28,9 +29,9 @@ def main() -> None:
             if dt is None:
                 dt = float(h5.attrs["dt"])
     data = np.column_stack(traces)
-    np.savez_compressed(args.output_dir / "current_model_20mm_bscan_Ez.npz", Ez=data, dt_s=dt)
+    np.savez_compressed(args.output_dir / f"{args.output_stem}_Ez.npz", Ez=data, dt_s=dt)
     scale = float(np.max(np.abs(data))) or 1.0
-    png = args.output_dir / "current_model_20mm_bscan_Ez.png"
+    png = args.output_dir / f"{args.output_stem}_Ez.png"
     plt.figure(figsize=(12, 5), facecolor="white")
     plt.imshow(data, extent=[0, data.shape[1] - 1, data.shape[0] * dt * 1e9, 0], aspect="auto", interpolation="nearest", cmap="seismic", vmin=-scale, vmax=scale)
     plt.xlabel("Trace index (100 mm step)")
@@ -50,9 +51,9 @@ def main() -> None:
         "samples_per_trace": int(data.shape[0]),
         "time_window_s": float(data.shape[0] * dt),
         "source_files": [f"{args.prefix}{i}.h5" for i in range(1, args.ntraces + 1)],
-        "grid_warning": "20 mm verification grid with --allow-underresolved; not a quantitative final model.",
+        "grid_warning": "Run used --allow-underresolved because the finite-conductivity steel approximation is formally under-resolved; review before quantitative use.",
     }
-    (args.output_dir / "current_model_20mm_bscan_metadata.json").write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding="utf-8")
+    (args.output_dir / f"{args.output_stem}_metadata.json").write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps({"shape": list(data.shape), "dt_s": dt, "png": str(png)}, ensure_ascii=False, indent=2))
 
 
