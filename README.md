@@ -38,7 +38,7 @@ python simulation/scripts/voxelize_current_model.py --dx 0.005 --outdir simulati
 
 `simulation/results/20mm_bscan/` 包含 20 mm 验证网格的单道 HDF5、31 道原始 HDF5、合成 Ez B-scan 和参数记录。20 mm 网格只用于验证导入、GPU 求解和输出链路；它不能作为最终定量结果，因为钢筋和 2.5 GHz 波长均欠分辨。
 
-5 mm 全尺寸单道和全长度 31 道 B-scan 已在 RTX 5060 上完成，约 5222 万网格单元，显存估算约 3.9 GB。结果位于 `simulation/results/5mm_ascan/` 和 `simulation/results/5mm_bscan/`，包含原始 HDF5、压缩 Ez 矩阵、B-scan PNG 和参数记录。
+5 mm 全尺寸单道和全长度 31 道 B-scan 已在 RTX 5060 上完成，约 5222 万网格单元，显存估算约 3.9 GB。结果位于 `simulation/results/5mm_ascan/` 和 `simulation/results/5mm_bscan/`，包含原始 HDF5、压缩 Ez 矩阵、B-scan PNG 和参数记录。 JPG 图像已分别整理在 `20mm_ascan/`、`20mm_bscan/`、`5mm_ascan/` 和 `5mm_bscan/` 子目录，清单见 `simulation/results/JPG_RESULTS.json`。
 
 ## 运行命令
 
