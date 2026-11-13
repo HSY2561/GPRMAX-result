@@ -21,7 +21,7 @@
     "order": "dewow -> bandpass -> background -> gain"
   },
   "fft_summary": {
-    "peak_frequency_GHz": 4.291746641074856,
+    "peak_frequency_GHz": 4.1919385796545106,
     "power_05_GHz": 2.2955854126679465,
     "power_95_GHz": 6.687140115163148,
     "sample_count": 521,
@@ -40,6 +40,7 @@
     10,
     11,
     12,
-    13
+    13,
+    14
   ]
 }
