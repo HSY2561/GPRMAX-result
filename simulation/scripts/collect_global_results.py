@@ -18,9 +18,9 @@ import numpy as np
 
 
 ROOT = Path(__file__).resolve().parents[2]
-GRID = ROOT / "simulation" / "raster_scan" / "global_5mm"
-OUT = ROOT / "simulation" / "results" / "global_5mm"
-NTRACES = 601
+GRID = ROOT / "simulation" / "raster_scan" / "global_10mm"
+OUT = ROOT / "simulation" / "results" / "global_10mm"
+NTRACES = 301
 NLINES = 21
 
 
@@ -44,12 +44,12 @@ def collect_line(line_no: int, delete_h5: bool = True) -> bool:
         return True
 
     traces = np.stack([read_trace(p) for p in paths], axis=0)
-    x_tx = 3.1 - np.arange(NTRACES, dtype=np.float32) * 0.005
+    x_tx = 3.1 - np.arange(NTRACES, dtype=np.float32) * 0.01
     x_rx = x_tx - 0.046
     t_ns = np.arange(traces.shape[1], dtype=np.float32)  # overwritten below if available
     # gprMax output uses the same CFL time step for every trace.  The time
-    # axis is retained as sample index here; the manifest records the 15 ns
-    # window and 1559 samples for reproducibility.
+    # axis is retained as sample index here; the manifest records the 10 ns
+    # window and the output sample count for reproducibility.
     np.savez_compressed(target, Ex=traces, tx_x_m=x_tx, rx_x_m=x_rx,
                         y_m=np.float32(line_y(line_no)), z_m=np.float32(0.5),
                         sample_index=t_ns)
@@ -57,10 +57,10 @@ def collect_line(line_no: int, delete_h5: bool = True) -> bool:
     vmax = float(np.percentile(np.abs(traces), 99.5)) or 1.0
     fig, ax = plt.subplots(figsize=(12, 7), dpi=150)
     ax.imshow(traces, aspect="auto", cmap="seismic", vmin=-vmax, vmax=vmax,
-              extent=[0, 15, 0, NTRACES - 1], origin="upper")
+              extent=[0, 10, 0, NTRACES - 1], origin="upper")
     ax.set_xlabel("Time (ns)")
     ax.set_ylabel("Trace number (right-to-left)")
-    ax.set_title(f"Dongzhi-Nan global raster line {line_no:03d} | Y={line_y(line_no):.3f} m | Ex")
+    ax.set_title(f"Dongzhi-Nan global raster 10mm line {line_no:03d} | Y={line_y(line_no):.3f} m | Ex")
     fig.tight_layout()
     fig.savefig(OUT / f"line_{line_no:03d}_Ex.jpg", pil_kwargs={"quality": 92})
     plt.close(fig)
@@ -81,11 +81,11 @@ def update_manifest() -> dict:
     OUT.mkdir(parents=True, exist_ok=True)
     completed = sorted(p.stem.split("_")[1] for p in OUT.glob("line_*_Ex.npz"))
     data = {
-        "name": "Dongzhi-Nan global raster 5mm numbered results",
+        "name": "Dongzhi-Nan global raster 10mm numbered results",
         "line_count_expected": NLINES,
         "traces_per_line": NTRACES,
         "line_spacing_m": 0.1,
-        "trace_spacing_m": 0.005,
+        "trace_spacing_m": 0.01,
         "tx_rx_spacing_m": 0.046,
         "scan_direction": "right-to-left, bottom-to-top in A-face view",
         "completed_lines": [int(x) for x in completed],

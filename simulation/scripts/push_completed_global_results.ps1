@@ -6,8 +6,8 @@ param(
 $repo = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
 $python = 'C:\env\gprmax_v4\Scripts\python.exe'
 $collector = Join-Path $repo 'simulation\scripts\collect_global_results.py'
-$log = Join-Path $repo 'simulation\results\global_5mm\collector.log'
-$err = Join-Path $repo 'simulation\results\global_5mm\collector.err.log'
+$log = Join-Path $repo 'simulation\results\global_10mm\collector.log'
+$err = Join-Path $repo 'simulation\results\global_10mm\collector.err.log'
 New-Item -ItemType Directory -Force -Path (Split-Path $log) | Out-Null
 
 while ($true) {
@@ -18,7 +18,7 @@ while ($true) {
         git -C $repo commit -m 'Add numbered completed global raster results'
         git -C $repo push origin main *>> $log
     }
-    $done = (Get-ChildItem -LiteralPath (Join-Path $repo 'simulation\results\global_5mm') -Filter 'line_*_Ex.npz' -ErrorAction SilentlyContinue | Measure-Object).Count
+    $done = (Get-ChildItem -LiteralPath (Join-Path $repo 'simulation\results\global_10mm') -Filter 'line_*_Ex.npz' -ErrorAction SilentlyContinue | Measure-Object).Count
     if ($done -ge 21) { break }
     $runner = Get-Process -Id $RunnerPid -ErrorAction SilentlyContinue
     if (-not $runner) { break }

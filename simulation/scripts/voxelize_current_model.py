@@ -40,10 +40,12 @@ def build_volume(dx: float, outdir: Path) -> dict:
         if path.exists():
             extra_bars.extend(load_json(name).get("bars", []))
 
-    # Store the specimen plus a 0.2 m local air margin.  The input deck
-    # inserts this volume at p1=(0.1, 0.1, 0.1) inside a larger FDTD domain,
-    # leaving a PML/air margin around all six sides.
-    domain = (3.2, 2.2, 0.6)
+    # Store the specimen plus a 0.1 m local air margin on the positive sides.
+    # The input deck inserts this volume at p1=(0.1, 0.1, 0.1) in a
+    # 10 mm-grid FDTD domain of 3.3 x 2.3 x 0.7 m.  This leaves one 0.1 m
+    # PML layer above the air margin while keeping the geometry assignment
+    # exactly inside the active grid.
+    domain = (3.1, 2.1, 0.5)
     origin = (0.0, 0.0, 0.0)
     shape = tuple(int(round(length / dx)) for length in domain)
     nx, ny, nz = shape

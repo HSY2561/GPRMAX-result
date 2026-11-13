@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[2]
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--grid", required=True, help="Name of a generated raster_scan subdirectory")
-    ap.add_argument("--ntraces", type=int, default=601, help="Number of traces per line")
+    ap.add_argument("--ntraces", type=int, default=301, help="Number of traces per line")
     ap.add_argument("--skip-complete", action="store_true")
     args = ap.parse_args()
     raster = ROOT / "simulation" / "raster_scan" / args.grid

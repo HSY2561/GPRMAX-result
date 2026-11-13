@@ -1,0 +1,12 @@
+{
+  "name": "Dongzhi-Nan global raster 10mm numbered results",
+  "line_count_expected": 21,
+  "traces_per_line": 301,
+  "line_spacing_m": 0.1,
+  "trace_spacing_m": 0.01,
+  "tx_rx_spacing_m": 0.046,
+  "scan_direction": "right-to-left, bottom-to-top in A-face view",
+  "completed_lines": [],
+  "completed_line_count": 0,
+  "raw_trace_h5_policy": "deleted locally after successful line aggregation"
+}
