@@ -10,8 +10,8 @@
       2.6
     ],
     "fft_derived_band_GHz": [
-      1.0,
-      5.5
+      2.4,
+      6.6
     ],
     "background_methods": [
       "mean",
