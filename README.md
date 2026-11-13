@@ -64,3 +64,7 @@ cmd /d /c "simulation\run_gpu.cmd simulation\inputs\current_model_5mm_ascan.in -
 - 对照图和时间窗指标：`simulation/results/polarization_check/`。
 
 两组都能看到明显的早期直达/耦合波，Y/Ey 的早期峰值更大；后续 1–8 ns 信号仍然较弱，说明仅修正极化方向还不能解决全部反射问题，还需要继续校准天线模型、钢筋材料和信号处理。
+
+## 局部 5 mm B-scan（Dewow + 带通）
+
+当前局部扫描配置位于 `simulation/local_bscan/local_bscan_5mm.in`：X=1.20–2.80 m、Y=1.10 m、5 mm 道间距、Tx/Rx=46 mm、天线贴面 Z=0.500 m。后处理使用 1.5 ns moving-average Dewow，并使用 0.25–2.60 GHz 四阶零相位 Butterworth 带通。
