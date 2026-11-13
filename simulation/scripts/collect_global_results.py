@@ -62,7 +62,7 @@ def collect_line(line_no: int, delete_h5: bool = True) -> bool:
     ax.set_ylabel("Trace number (right-to-left)")
     ax.set_title(f"Dongzhi-Nan global raster line {line_no:03d} | Y={line_y(line_no):.3f} m | Ex")
     fig.tight_layout()
-    fig.savefig(OUT / f"line_{line_no:03d}_Ex.jpg", quality=92)
+    fig.savefig(OUT / f"line_{line_no:03d}_Ex.jpg", pil_kwargs={"quality": 92})
     plt.close(fig)
 
     with (OUT / f"line_{line_no:03d}_trace_coordinates.csv").open("w", newline="", encoding="utf-8") as fp:
