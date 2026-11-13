@@ -25,8 +25,9 @@
     16,
     17,
     18,
-    19
+    19,
+    20
   ],
-  "completed_line_count": 19,
+  "completed_line_count": 20,
   "raw_trace_h5_policy": "deleted locally after successful line aggregation"
 }
