@@ -56,10 +56,12 @@ def collect_line(line_no: int, delete_h5: bool = True) -> bool:
 
     vmax = float(np.percentile(np.abs(traces), 99.5)) or 1.0
     fig, ax = plt.subplots(figsize=(12, 7), dpi=150)
-    ax.imshow(traces, aspect="auto", cmap="seismic", vmin=-vmax, vmax=vmax,
-              extent=[0, 10, 0, NTRACES - 1], origin="upper")
-    ax.set_xlabel("Time (ns)")
-    ax.set_ylabel("Trace number (right-to-left)")
+    # Radargram convention requested by the user: distance is horizontal and
+    # time is vertical, increasing downward from the antenna coupling pulse.
+    ax.imshow(traces.T, aspect="auto", cmap="seismic", vmin=-vmax, vmax=vmax,
+              extent=[0, 3, 10, 0], origin="upper")
+    ax.set_xlabel("Distance along scan (m; right-to-left)")
+    ax.set_ylabel("Time (ns)")
     ax.set_title(f"Dongzhi-Nan global raster 10mm line {line_no:03d} | Y={line_y(line_no):.3f} m | Ex")
     fig.tight_layout()
     fig.savefig(OUT / f"line_{line_no:03d}_Ex.jpg", pil_kwargs={"quality": 92})

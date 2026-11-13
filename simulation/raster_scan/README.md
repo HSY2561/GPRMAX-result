@@ -11,3 +11,4 @@
 - 极化：X；几何：`simulation/geometry_10mm/geometry.h5`。
 
 输入文件位于 `global_10mm/line_###/input.in`，完整参数见 `global_10mm/raster_manifest.json`。
+后处理图像采用距离为横轴、时间为纵轴的雷达图坐标，时间从上向下增加。

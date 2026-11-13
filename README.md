@@ -36,3 +36,4 @@ C:\env\gprmax_v4\Scripts\python.exe simulation/scripts/run_raster_scan.py --grid
 ```
 
 后台整理器会把完成测线转换为 `simulation/results/global_10mm/line_001_Ex.npz`、`line_001_Ex.jpg` 和坐标 CSV，并在整理成功后删除该线的临时 HDF5。
+生成的 B-scan JPG 统一使用距离横轴、时间纵轴，时间从上向下增加。
