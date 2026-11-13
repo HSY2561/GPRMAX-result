@@ -1,0 +1,10 @@
+{
+  "manifest": "simulation\\raster_scan\\20mm\\raster_manifest.json",
+  "component": "Ex",
+  "line_count": 19,
+  "traces_per_line": 31,
+  "trace_spacing_m": 0.1,
+  "dt_s": 3.851666403092941e-11,
+  "path_order": "right-to-left along X, then bottom-to-top along Y",
+  "trace_order": "each line right-to-left; lines bottom-to-top"
+}

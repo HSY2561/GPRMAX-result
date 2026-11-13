@@ -49,3 +49,7 @@ cmd /d /c "simulation\run_gpu.cmd simulation\inputs\current_model_5mm_ascan.in -
 ```
 
 `--allow-underresolved` 是当前钢筋有限电导率近似下的数值链路选项。正式定量结果需要进一步做钢筋材料模型、天线参数和网格收敛性校准。
+
+## 修正后的 A 面栅格扫描
+
+当前栅格路径已经改为从 A 面右下侧开始，沿 X 方向由右向左扫描，完成一条线后沿 Y 方向向上移动 100 mm。Tx/Rx 间距为 **46 mm**，Tx 起点为 `(3.100, Y, 0.550)` m，Rx 起点为 `(3.054, Y, 0.550)` m，使用 X 极化理想偶极子。配置、路径清单和运行脚本位于 `simulation/raster_scan/`；20 mm 全部 PML-safe 栅格结果位于 `simulation/results/raster_20mm/`。

@@ -8,3 +8,6 @@ __pycache__/
 simulation/current_model_*.h5
 simulation/current_model_*.in
 simulation/current_model_*.png
+simulation/raster_scan/*/line_*/input*.h5
+simulation/raster_scan/*/line_*/run.log
+simulation/raster_scan/*/runner.log
