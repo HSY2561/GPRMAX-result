@@ -1,0 +1,38 @@
+{
+  "processing": {
+    "dewow_windows_ns": [
+      1.0,
+      1.5,
+      2.0
+    ],
+    "reference_band_GHz": [
+      0.25,
+      2.6
+    ],
+    "fft_derived_band_GHz": [
+      1.0,
+      5.5
+    ],
+    "background_methods": [
+      "mean",
+      "median"
+    ],
+    "gain": "1 + 1.5*(t/10ns)^2",
+    "order": "dewow -> bandpass -> background -> gain"
+  },
+  "fft_summary": {
+    "peak_frequency_GHz": 4.391554702495201,
+    "power_05_GHz": 2.3953934740882916,
+    "power_95_GHz": 6.587332053742801,
+    "sample_count": 521,
+    "dt_s": 1.923076923076923e-11
+  },
+  "processed_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ]
+}
