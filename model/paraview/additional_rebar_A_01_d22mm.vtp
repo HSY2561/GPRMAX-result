@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<VTKFile type="PolyData" version="0.1" byte_order="LittleEndian" header_type="UInt32" compressor="vtkZLibDataCompressor">
+  <PolyData>
+    <Piece NumberOfPoints="128" NumberOfVerts="0" NumberOfLines="0" NumberOfStrips="0" NumberOfPolys="34">
+      <PointData Normals="Normals" TCoords="TCoords">
+        <DataArray type="Float32" Name="Normals" NumberOfComponents="3" format="binary" RangeMin="0.9999999925116843" RangeMax="1.000000067179426">
+          AQAAAACAAAAABgAA2gAAAA==eF7t0rENAjEMBdAUtFAhNmCAO4mCJikZAHoWYAOaSNRsAWuQ4kQBI8AQNAyAbYL5f4JrLs09KZbvJ3EIuQRff5fp3txdVxf09rAzz14duXluzI/lpKDfo4VZv2jdU2stWnuptTda//3LhW6b4+mbOJOlJkK9W3pG6O+WDAnyuCWrueZ3y565ntctvcz1ftzyb3O9T7dkNbfN+IyGmoiGnmTIkNCQmQxnJMOdkOEOyffbeh5sZTK8ERnelAwzQIaZIcOMkWEmIxpmmFzzluBrcA9Og/vxB8OsJrA=
+          <InformationKey name="L2_NORM_RANGE" location="vtkDataArray" length="2">
+            <Value index="0">
+              0.99999999251
+            </Value>
+            <Value index="1">
+              1.0000000672
+            </Value>
+          </InformationKey>
+        </DataArray>
+        <DataArray type="Float32" Name="TCoords" NumberOfComponents="2" format="binary" RangeMin="0" RangeMax="1.4142135623730951">
+          AQAAAACAAAAABAAARwEAAA==eF5tkT1Ow0AQRvcASERIKehCQ+2CBs0ETEMdiQY63yA5gim5RQLHWBcRBaIwHQ1dbsANgB3zxgojLK3Wb3e++fk2pfYyDZ/ttlbwCm7gBl7AC7iGa7iCK3gGz+AJPIETnODdxS/abryFt/AaXsMt3MI1XMMJTh4/J36extn9+/c+6GP+WD/2F/uP88X5oz/Rv+hvDddwfJ8GbuC/73t7fqYF2vfnSvung3x3f6rfnw/57WOqR1ev+XD3JWXl8i/lrCt3UmK6EitF0y3765OSwzgbm9buTWvxprVl/3ZmdxZjsaYx7bJ/2cDCvRAv6IV8Sn6lnt4cTx9tBvpR+lP6VfoX5hHmE+Yddz/3ONd5Hs/rmr26mbqZupm6mboddTvqDnOGuUdf3Cf3zX10X93nPd8F3wXfBd8F3xXfFd8V34d3/wE86UCY
+          <InformationKey name="L2_NORM_RANGE" location="vtkDataArray" length="2">
+            <Value index="0">
+              0
+            </Value>
+            <Value index="1">
+              1.4142135624
+            </Value>
+          </InformationKey>
+        </DataArray>
+      </PointData>
+      <CellData>
+      </CellData>
+      <Points>
+        <DataArray type="Float32" Name="Points" NumberOfComponents="3" format="binary" RangeMin="0.5472433488024337" RangeMax="1.9808126160349293">
+          AQAAAACAAAAABgAAwwEAAA==eF51lK9Lg1EUhhfWTIIgYhDTTAbnbE6jsCCCWbPNJraB4L9glFXBZfEX08/h5ubchoIgaBAEbSJaJuL33o9z9iDYHg6Xy7nnfe7JrRzm283m7NPidT4Xczb7MSd+3UzqOzPNwKqLPxtJfWyiEVh18dTSUag/TF4FVl1cTB+H+upyPbDq4u/HpD5YqgVWXTx/fxLqt6MJqy4+eDkN9Vr9MrDq4lSqEupD5YRVFy+MnPl5sZ2vZM79frHdnx6PvB+x9VPsRf3+e5H33ypf+HvF9t6B6arPR2zzGd6u+jzFNs9GqerzF9v87XxmreXnxXb/7saN3y+2fp7X296P2PsvdPr9x2zv3f/p+HvFNp+3ra7PR2zz/Lrr+jzFNv+9967PX2x56YzlJbZ8daflKzYf1IP5IHZ/Cp2+PzGbb3qj+SY2PzUT81NsPmuG5rM4B//pPD2n2/SZDtNbuko/6SQ9pHv0jY7RK7pEf+gMPaEb9IEOMHdmzXyZKXNkdsyLGTGX/7JgXsyUudMN+kPH6CFdpc90nv+Cf4f/i3/w7z8VKwv+d+4E7g3uFu4f7ijuMe467kPuTO5V7l7uZ+5w7vlf7vAShg==
+          <InformationKey name="L2_NORM_RANGE" location="vtkDataArray" length="2">
+            <Value index="0">
+              0.5472433488
+            </Value>
+            <Value index="1">
+              1.980812616
+            </Value>
+          </InformationKey>
+        </DataArray>
+      </Points>
+      <Verts>
+        <DataArray type="Int64" Name="connectivity" format="binary" RangeMin="1e+299" RangeMax="-1e+299">
+          AAAAAACAAAAAAAAA
+        </DataArray>
+        <DataArray type="Int64" Name="offsets" format="binary" RangeMin="1e+299" RangeMax="-1e+299">
+          AAAAAACAAAAAAAAA
+        </DataArray>
+      </Verts>
+      <Lines>
+        <DataArray type="Int64" Name="connectivity" format="binary" RangeMin="1e+299" RangeMax="-1e+299">
+          AAAAAACAAAAAAAAA
+        </DataArray>
+        <DataArray type="Int64" Name="offsets" format="binary" RangeMin="1e+299" RangeMax="-1e+299">
+          AAAAAACAAAAAAAAA
+        </DataArray>
+      </Lines>
+      <Strips>
+        <DataArray type="Int64" Name="connectivity" format="binary" RangeMin="1e+299" RangeMax="-1e+299">
+          AAAAAACAAAAAAAAA
+        </DataArray>
+        <DataArray type="Int64" Name="offsets" format="binary" RangeMin="1e+299" RangeMax="-1e+299">
+          AAAAAACAAAAAAAAA
+        </DataArray>
+      </Strips>
+      <Polys>
+        <DataArray type="Int64" Name="connectivity" format="binary" RangeMin="0" RangeMax="127">
+          AQAAAACAAAAABgAAEQEAAA==eF5d08NyIAAABNHYtm3btndj7Ma2rV/PIT2Xmcur6vsEBPwuEIMxyFQPxRBTPRzDTPVIjDDVozHKVI/FGFM9HuNM9URMMNWTMclUT8UUUz0d00z1TMww1bMxy1TPxRxTPR/zTPVCLDDVi7HIVC/FElO9HMtM9UqsMNWrscpUr8UaU70e60z1Rmww1ZuxyVRvxRZTvR3bTPVO7DDVu7HLVO/FHlO9H/tMdf1cG8BBHMJhHMFRHMNxnMBJnMJpnMFZnMM/+BfncQEXcQmXcQVXcQ3XcQP/4X/cxC3cxh3cxT3cxwM8xCM8xhM8xTM8xwu8xCu8xhu8xTu8xwd8xCd8xhd8xTd8xw/8xC/8xh8uZSeh
+        </DataArray>
+        <DataArray type="Int64" Name="offsets" format="binary" RangeMin="4" RangeMax="192">
+          AQAAAACAAAAQAQAAWgAAAA==eF4txRECgwAAAMAgCAZBEAwGg0EQBEEwCIIgGAyCIAiCYBAEPWVP6WlBd3JhcIl8c+zEqe9++OmXM+cuXLry27Ubt+788de9B4+ePHvxz6s37/778AmBPQmh
+        </DataArray>
+      </Polys>
+    </Piece>
+  </PolyData>
+</VTKFile>

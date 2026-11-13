@@ -31,6 +31,14 @@ def build_volume(dx: float, outdir: Path) -> dict:
     model = load_json("model_metadata.json")
     defects = load_json("foam_defects_metadata.json")["defects"]
     plates = load_json("foam_plates_metadata.json")["plates"]
+    # The latest ParaView model adds variable-diameter Y-direction bars and
+    # two A-face edge bars.  Keep these as explicit cylinders so the HDF5
+    # geometry matches the visible model rather than only the base grid.
+    extra_bars = []
+    for name in ("additional_rebars_metadata.json", "edge_rebars_metadata.json"):
+        path = MODEL / name
+        if path.exists():
+            extra_bars.extend(load_json(name).get("bars", []))
 
     # Store the specimen plus a 0.2 m local air margin.  The input deck
     # inserts this volume at p1=(0.1, 0.1, 0.1) inside a larger FDTD domain,
@@ -94,6 +102,13 @@ def build_volume(dx: float, outdir: Path) -> dict:
                          (rebar["face_B"]["Y_direction"]["z_m"], rebar["face_B"]["Y_direction"]["x_centres_m"])):
             for x0 in xs:
                 steel |= ((Y >= 0.04) & (Y <= 1.96) & ((X - x0) ** 2 + (z - zbar) ** 2 <= radius * radius))
+        for bar in extra_bars:
+            r = float(bar["diameter_m"]) / 2.0
+            x0 = float(bar["x_m"])
+            z0 = float(bar["z_center_m"])
+            y0 = float(bar["y_min_m"])
+            y1 = float(bar["y_max_m"])
+            steel |= ((Y >= y0) & (Y <= y1) & ((X - x0) ** 2 + (z - z0) ** 2 <= r * r))
         layer[steel] = 2
         layer_tags[steel] = 3
         data[:, :, k] = layer

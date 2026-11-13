@@ -12,15 +12,16 @@ ROOT = Path(__file__).resolve().parents[2]
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--grid", required=True, help="Name of a generated raster_scan subdirectory")
+    ap.add_argument("--ntraces", type=int, default=601, help="Number of traces per line")
     ap.add_argument("--skip-complete", action="store_true")
     args = ap.parse_args()
     raster = ROOT / "simulation" / "raster_scan" / args.grid
     lines = sorted(raster.glob("line_*/input.in"))
     for input_path in lines:
-        if args.skip_complete and all((input_path.parent / f"input{i}.h5").exists() for i in range(1, 32)):
+        if args.skip_complete and all((input_path.parent / f"input{i}.h5").exists() for i in range(1, args.ntraces + 1)):
             print(f"skip complete {input_path.parent.name}", flush=True)
             continue
-        command = f'simulation\\run_gpu.cmd {input_path.relative_to(ROOT)} -n 31 -gpu 0 --allow-underresolved'
+        command = f'simulation\\run_gpu.cmd {input_path.relative_to(ROOT)} -n {args.ntraces} -gpu 0 --allow-underresolved'
         log_path = input_path.parent / "run.log"
         print(f"running {input_path.parent.name}", flush=True)
         with log_path.open("w", encoding="utf-8", errors="replace") as log:

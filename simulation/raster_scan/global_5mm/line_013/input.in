@@ -1,0 +1,12 @@
+#title: Dongzhi-Nan global raster line 013 (5mm, right-to-left)
+#domain: 3.400 2.400 0.800
+#dx_dy_dz: 0.005 0.005 0.005
+#time_window: 15e-9
+
+#waveform: ricker 1 2.5e9 radar_pulse
+#hertzian_dipole: x 3.100 1.300 0.500 radar_pulse
+#rx: 3.054 1.300 0.500
+#src_steps: -0.005 0 0
+#rx_steps: -0.005 0 0
+
+#geometry_objects_read: 0.100 0.100 0.100 simulation/geometry_5mm/geometry.h5 materials y

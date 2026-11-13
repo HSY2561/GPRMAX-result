@@ -19,9 +19,9 @@
   "geometry_file": "simulation\\geometry_5mm\\geometry.h5",
   "materials_file": "simulation\\geometry_5mm\\materials.json",
   "material_counts": {
-    "0": 18892504,
-    "1": 14592000,
-    "2": 111360,
+    "0": 18868384,
+    "1": 14581200,
+    "2": 146280,
     "3": 196136
   }
 }

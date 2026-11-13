@@ -1,28 +1,16 @@
-# A 面栅格扫描配置
+# 全局 5 mm 栅格扫描
 
-坐标约定：X 为 3 m 长度方向，Y 为 A 面从下到上的 2 m 方向，Z 为板厚方向。几何体通过 `p1=(0.1,0.1,0.1)` 插入计算域，因此 A 面全局高度为 `Z=0.5 m`。
+坐标约定：X 为 3 m 长度方向，Y 为 2 m 面内方向，Z 为板厚方向。A 面全局范围为 X=0.1…3.1、Y=0.1…2.1、Z=0.5 m。
 
-正确路径为：
+- 测线间距：100 mm；21 条测线；Y 从 0.1 m 到 2.1 m。
+- 道间距：5 mm；每条 3 m；601 道。
+- 扫描顺序：从 A 面右下角开始，沿 X 由右向左；完成一条后 Y 向上 100 mm。
+- Tx 起点：`(3.100, Y, 0.500)` m；Rx 起点：`(3.054, Y, 0.500)` m。
+- Tx/Rx：46 mm；`#src_steps` 与 `#rx_steps` 均为 `-0.005 0 0`。
+- 极化：X；几何：`simulation/geometry_5mm/geometry.h5`。
 
-1. 从 A 面右下侧开始；
-2. Tx/Rx 沿 X 方向由右向左移动；
-3. 每道间距 100 mm；
-4. 一条线结束后 Y 方向向上移动 100 mm；
-5. 继续下一条测线。
+输入文件位于 `global_5mm/line_###/input.in`，完整参数见 `global_5mm/raster_manifest.json`。运行命令：
 
-当前修正后的天线参数：
-
-- Tx 起点：`(3.100, Y, 0.550) m`；
-- Rx 起点：`(3.054, Y, 0.550) m`；
-- Tx/Rx 间距：`46 mm`，Rx 位于 Tx 左侧；
-- `#src_steps: -0.100 0 0`；
-- `#rx_steps: -0.100 0 0`；
-- X 极化理想偶极子，电磁波沿 Z 方向进入板内。
-
-5 mm 配置覆盖 `Y=0.1…2.1 m`，共 21 条线、每线 31 道。20 mm 验证配置因 PML 厚度为 0.2 m，采用 PML 安全的 `Y=0.3…2.1 m`，共 19 条线。
-
-注意：旧的 `current_model_*_bscan.in` 是早期固定 Y、+X 扫描的历史结果，不代表当前栅格路径；当前路径输入位于 `5mm/line_*/input.in` 和 `20mm/line_*/input.in`。
-
-## 贴面天线版本
-
-`5mm_flush/` 是贴紧 A 面的版本：天线参考高度 `Z=0.500 m`，与混凝土顶面重合；Tx/Rx 间距 46 mm，21 条测线、每条 31 道。完整计算由 `run_raster_scan.py --grid 5mm_flush` 后台执行，运行日志和逐线输出保存在对应 line 子目录。
+```powershell
+C:\env\gprmax_v4\Scripts\python.exe simulation/scripts/run_raster_scan.py --grid global_5mm --ntraces 601 --skip-complete
+```

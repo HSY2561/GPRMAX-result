@@ -1,0 +1,53 @@
+{
+  "name": "Dongzhi-Nan global raster scan 5mm",
+  "model": "latest desktop 东至南模型 synced 2026-11-13",
+  "line_count": 21,
+  "trace_count_per_line": 601,
+  "line_spacing_m": 0.1,
+  "trace_spacing_m": 0.005,
+  "scan_direction": "right-to-left, bottom-to-top in A-face view",
+  "start_tx_xyz_m": [
+    3.1,
+    0.1,
+    0.5
+  ],
+  "start_rx_xyz_m": [
+    3.054,
+    0.1,
+    0.5
+  ],
+  "tx_rx_spacing_m": 0.046,
+  "line_y_positions_m": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0,
+    1.1,
+    1.2,
+    1.3,
+    1.4,
+    1.5,
+    1.6,
+    1.7,
+    1.8,
+    1.9,
+    2.0,
+    2.1
+  ],
+  "line_length_m": 3.0,
+  "geometry_origin_m": [
+    0.1,
+    0.1,
+    0.1
+  ],
+  "antenna_polarization": "x (tangential)",
+  "time_window_s": 1.5e-08,
+  "geometry_h5": "simulation/geometry_5mm/geometry.h5",
+  "runner_command": "python simulation/scripts/run_raster_scan.py --grid global_5mm --ntraces 601 --skip-complete"
+}
