@@ -36,3 +36,5 @@ C:\env\gprmax_v4\Scripts\python.exe simulation/scripts/run_raster_scan.py --grid
 ```
 
 每条线的状态和 HDF5 输出保存在对应 `line_###/` 目录。计算完成后再生成 B-scan 图像和结果压缩包。
+
+后台整理器会把已完成测线转换为编号结果：`simulation/results/global_5mm/line_001_Ex.npz`、`line_001_Ex.jpg` 和对应的 `line_001_trace_coordinates.csv`。编号中的 `001…021` 对应 Y=0.1…2.1 m；每条线内部的道号 `001…601` 保持右向左顺序。某条线成功整理后，其临时 `input*.h5` 会从本地删除，GitHub 只保留压缩矩阵、JPG、坐标和清单。
