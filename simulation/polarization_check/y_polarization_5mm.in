@@ -1,0 +1,10 @@
+#title: Polarization check - Y dipole Ey
+#domain: 3.400 2.400 0.800
+#dx_dy_dz: 0.005 0.005 0.005
+#time_window: 15e-9
+
+#waveform: ricker 1 2.5e9 radar_pulse
+#hertzian_dipole: y 1.550 1.100 0.550 radar_pulse
+#rx: 1.504 1.100 0.550
+
+#geometry_objects_read: 0.100 0.100 0.100 simulation/geometry_5mm/geometry.h5 materials y

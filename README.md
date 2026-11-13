@@ -53,3 +53,14 @@ cmd /d /c "simulation\run_gpu.cmd simulation\inputs\current_model_5mm_ascan.in -
 ## 修正后的 A 面栅格扫描
 
 当前栅格路径已经改为从 A 面右下侧开始，沿 X 方向由右向左扫描，完成一条线后沿 Y 方向向上移动 100 mm。Tx/Rx 间距为 **46 mm**，Tx 起点为 `(3.100, Y, 0.550)` m，Rx 起点为 `(3.054, Y, 0.550)` m，使用 X 极化理想偶极子。配置、路径清单和运行脚本位于 `simulation/raster_scan/`；20 mm 全部 PML-safe 栅格结果位于 `simulation/results/raster_20mm/`。
+
+## X/Ex 与 Y/Ey 单道对照
+
+为排查旧 Z 向偶极子造成的法向辐射轴向零点，新增了同一位置、同一 5 mm 网格、同一 Tx/Rx=46 mm 间距的两组单道：
+
+- `simulation/polarization_check/x_polarization_5mm.in`：X 极化，比较 `Ex`；
+- `simulation/polarization_check/y_polarization_5mm.in`：Y 极化，比较 `Ey`；
+- 天线位置：Tx `(1.55, 1.10, 0.55)` m，Rx `(1.504, 1.10, 0.55)` m；
+- 对照图和时间窗指标：`simulation/results/polarization_check/`。
+
+两组都能看到明显的早期直达/耦合波，Y/Ey 的早期峰值更大；后续 1–8 ns 信号仍然较弱，说明仅修正极化方向还不能解决全部反射问题，还需要继续校准天线模型、钢筋材料和信号处理。
