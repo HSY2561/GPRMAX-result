@@ -12,7 +12,7 @@ New-Item -ItemType Directory -Force -Path (Split-Path $log) | Out-Null
 
 while ($true) {
     & $python $collector --once *>> $log
-    git -C $repo add simulation/results/global_5mm
+    git -C $repo add simulation/results/global_10mm
     $pending = git -C $repo diff --cached --name-only
     if ($pending) {
         git -C $repo commit -m 'Add numbered completed global raster results'
