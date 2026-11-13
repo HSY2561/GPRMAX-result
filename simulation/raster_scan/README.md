@@ -22,3 +22,7 @@
 5 mm 配置覆盖 `Y=0.1…2.1 m`，共 21 条线、每线 31 道。20 mm 验证配置因 PML 厚度为 0.2 m，采用 PML 安全的 `Y=0.3…2.1 m`，共 19 条线。
 
 注意：旧的 `current_model_*_bscan.in` 是早期固定 Y、+X 扫描的历史结果，不代表当前栅格路径；当前路径输入位于 `5mm/line_*/input.in` 和 `20mm/line_*/input.in`。
+
+## 贴面天线版本
+
+`5mm_flush/` 是贴紧 A 面的版本：天线参考高度 `Z=0.500 m`，与混凝土顶面重合；Tx/Rx 间距 46 mm，21 条测线、每条 31 道。完整计算由 `run_raster_scan.py --grid 5mm_flush` 后台执行，运行日志和逐线输出保存在对应 line 子目录。
