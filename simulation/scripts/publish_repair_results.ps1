@@ -35,5 +35,8 @@ with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
         z.write(p,p.relative_to(root).as_posix())
 "@
 git -C $repo add simulation/results/global_10mm_fixed520 simulation/results/global_20mm_reference archives/Dongzhi-Nan_repaired_10mm_20mm_results_2026-11-14.zip reports/global_scan_repair_diagnosis.md
+Remove-Item -LiteralPath (Join-Path $repo 'simulation/results/global_10mm') -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -LiteralPath (Join-Path $repo 'archives/Dongzhi-Nan_global_10mm_results_2026-11-14.zip') -Force -ErrorAction SilentlyContinue
+git -C $repo add -A simulation/results archives
 git -C $repo commit -m 'Publish repaired 10mm and 20mm processed results'
 git -C $repo push origin main
