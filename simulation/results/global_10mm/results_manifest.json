@@ -30,5 +30,13 @@
     21
   ],
   "completed_line_count": 21,
-  "raw_trace_h5_policy": "deleted locally after successful line aggregation"
+  "raw_trace_h5_policy": "deleted locally after successful line aggregation",
+  "overview_image": "simulation/results/global_10mm/global_10mm_overview.jpg",
+  "archive": "archives/Dongzhi-Nan_global_10mm_results_2026-11-14.zip",
+  "per_line_files": {
+    "image": "line_{line:03d}_Ex.jpg",
+    "matrix": "line_{line:03d}_Ex.npz",
+    "coordinates": "line_{line:03d}_trace_coordinates.csv"
+  },
+  "axis_convention": "distance horizontal (0-3 m, right-to-left scan); time vertical (0-10 ns, downward)"
 }
