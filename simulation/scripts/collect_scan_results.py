@@ -73,11 +73,13 @@ def main() -> None:
     args = ap.parse_args()
     outdir = ROOT / args.outdir
     while True:
-        completed = [int(p.stem.split("_")[1]) for p in outdir.glob("line_*_Ex.npz")]
+        completed = sorted({int(p.stem.split("_")[1]) for p in outdir.glob("line_*_Ex.npz")})
         for line_no in range(1, args.line_count + 1):
             if collect_line(args.grid, outdir, line_no, args.ntraces, args.dx,
                             args.time_window_ns, args.y0, args.z, not args.keep_h5):
-                completed.append(line_no)
+                if line_no not in completed:
+                    completed.append(line_no)
+        completed = sorted(set(completed))
         manifest = {
             "grid": args.grid, "line_count_expected": args.line_count,
             "traces_per_line": args.ntraces, "trace_spacing_m": args.dx,
