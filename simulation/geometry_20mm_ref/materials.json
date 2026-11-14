@@ -1,0 +1,51 @@
+{
+  "schema": "gprMax-material-database",
+  "schema_version": 1,
+  "database": {
+    "id": "materials",
+    "name": "东至南模型 materials",
+    "version": "1.0.0"
+  },
+  "materials": {
+    "material_000_concrete": {
+      "name": "concrete",
+      "model": "constant",
+      "base": {
+        "relative_permittivity": 6.0,
+        "electric_conductivity_s_per_m": 0.01,
+        "relative_permeability": 1.0,
+        "magnetic_conductivity_s_per_m": 0.0
+      }
+    },
+    "material_001_air": {
+      "name": "air",
+      "model": "constant",
+      "base": {
+        "relative_permittivity": 1.0,
+        "electric_conductivity_s_per_m": 0.0,
+        "relative_permeability": 1.0,
+        "magnetic_conductivity_s_per_m": 0.0
+      }
+    },
+    "material_002_steel": {
+      "name": "steel",
+      "model": "constant",
+      "base": {
+        "relative_permittivity": 1.0,
+        "electric_conductivity_s_per_m": 1000000.0,
+        "relative_permeability": 1.0,
+        "magnetic_conductivity_s_per_m": 0.0
+      }
+    },
+    "material_003_eps": {
+      "name": "eps",
+      "model": "constant",
+      "base": {
+        "relative_permittivity": 1.05,
+        "electric_conductivity_s_per_m": 0.0,
+        "relative_permeability": 1.0,
+        "magnetic_conductivity_s_per_m": 0.0
+      }
+    }
+  }
+}

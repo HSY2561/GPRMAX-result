@@ -1,0 +1,34 @@
+{
+  "name": "global_20mm_reference",
+  "line_count": 21,
+  "trace_count_per_line": 151,
+  "line_spacing_m": 0.1,
+  "trace_spacing_m": 0.02,
+  "scan_direction": "right-to-left, bottom-to-top in A-face view",
+  "start_tx_xyz_m": [
+    3.2,
+    0.2,
+    0.72
+  ],
+  "start_rx_xyz_m": [
+    3.1540000000000004,
+    0.2,
+    0.72
+  ],
+  "tx_rx_spacing_nominal_m": 0.046,
+  "time_window_s": 1e-08,
+  "grid_m": 0.02,
+  "fdtd_domain_m": [
+    3.5,
+    2.5,
+    0.9
+  ],
+  "geometry_origin_m": [
+    0.2,
+    0.2,
+    0.2
+  ],
+  "geometry_h5": "simulation/geometry_20mm_ref/geometry.h5",
+  "source_height_above_slab_m": 0.11999999999999988,
+  "note": "Tx/Rx raised above A surface to keep both points in air cells and avoid top-rebar overlap."
+}
