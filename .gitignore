@@ -20,3 +20,5 @@ simulation/raster_scan/*/validation_line*.log
 simulation/raster_scan/*/validation_line*.err.log
 simulation/results/*/collector.log
 simulation/results/*/collector.err.log
+simulation/raster_scan/*/validation.log
+simulation/raster_scan/*/chain_started.txt
