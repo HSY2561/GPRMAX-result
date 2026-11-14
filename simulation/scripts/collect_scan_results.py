@@ -73,7 +73,7 @@ def main() -> None:
     args = ap.parse_args()
     outdir = ROOT / args.outdir
     while True:
-        completed = []
+        completed = [int(p.stem.split("_")[1]) for p in outdir.glob("line_*_Ex.npz")]
         for line_no in range(1, args.line_count + 1):
             if collect_line(args.grid, outdir, line_no, args.ntraces, args.dx,
                             args.time_window_ns, args.y0, args.z, not args.keep_h5):
