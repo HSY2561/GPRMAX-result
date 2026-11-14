@@ -7,10 +7,18 @@ function Wait-Complete($path) {
         Start-Sleep -Seconds 60
     }
 }
+function Wait-Processed($path) {
+    while ($true) {
+        if (Test-Path $path) {
+            try { $m = Get-Content $path -Raw | ConvertFrom-Json; if ($m.lines.Count -ge 21) { return } } catch {}
+        }
+        Start-Sleep -Seconds 60
+    }
+}
 Wait-Complete (Join-Path $repo 'simulation/results/global_10mm_fixed520/results_manifest.json')
 Wait-Complete (Join-Path $repo 'simulation/results/global_20mm_reference/results_manifest.json')
-Wait-Complete (Join-Path $repo 'simulation/results/global_10mm_fixed520/processed/processing_manifest.json')
-Wait-Complete (Join-Path $repo 'simulation/results/global_20mm_reference/processed/processing_manifest.json')
+Wait-Processed (Join-Path $repo 'simulation/results/global_10mm_fixed520/processed/processing_manifest.json')
+Wait-Processed (Join-Path $repo 'simulation/results/global_20mm_reference/processed/processing_manifest.json')
 $archive = Join-Path $repo 'archives/Dongzhi-Nan_repaired_10mm_20mm_results_2026-11-14.zip'
 & 'C:\env\gprmax_v4\Scripts\python.exe' -c @"
 from pathlib import Path
