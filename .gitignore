@@ -22,3 +22,4 @@ simulation/results/*/collector.log
 simulation/results/*/collector.err.log
 simulation/raster_scan/*/validation.log
 simulation/raster_scan/*/chain_started.txt
+simulation/results/processing_pipeline.log
