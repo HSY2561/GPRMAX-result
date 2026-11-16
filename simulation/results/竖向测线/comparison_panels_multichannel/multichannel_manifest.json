@@ -1,0 +1,52 @@
+{
+  "line_count": 30,
+  "completed_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "pending_lines": [],
+  "panel_order": [
+    "geometry",
+    "purple Esynthetic",
+    "Ex grayscale enhanced",
+    "Ey grayscale enhanced",
+    "Ez grayscale enhanced",
+    "Esynthetic grayscale enhanced"
+  ],
+  "panel_layout": "one long image per line; geometry on top and five radar images below",
+  "source_purple": "radar_profiles/line_##_radar_Esynthetic.jpg",
+  "source_gray": "grayscale_enhanced/line_##_{Ex,Ey,Ez,Esynthetic}_gray_enhanced.jpg",
+  "output_dir": "comparison_panels_multichannel",
+  "grid_files": [
+    "comparison_panels_multichannel/multichannel_grid_5x6.jpg",
+    "comparison_panels_multichannel/multichannel_grid_3x10.jpg"
+  ]
+}
