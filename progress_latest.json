@@ -1,0 +1,10 @@
+{
+  "run_root": "C:\\gprmax_latest",
+  "current_line": 9,
+  "source_model": "C:\\Users\\user\\Desktop\\东至南模型\\东至南模型.pvsm",
+  "total_lines": 21,
+  "completed_lines": 8,
+  "note": "Lines 001-008 complete; line 009 resumed at chunk 198. Remaining lines continue on local GPU.",
+  "current_chunk": "198/7",
+  "updated": "2026-11-16 23:55 Asia/Shanghai"
+}
