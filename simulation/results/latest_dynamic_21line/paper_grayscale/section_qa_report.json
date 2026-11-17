@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "checked_at": "2026-11-17 15:50:42 +08:00",
+  "lines": 21,
+  "products": [
+    "section_and_synthetic",
+    "raw_Ex",
+    "synthetic_magnitude_gray"
+  ],
+  "figures": 63,
+  "files": 189,
+  "formats": [
+    "JPG 300 dpi grayscale",
+    "PNG 600 dpi grayscale",
+    "PDF single-page grayscale"
+  ],
+  "missing_files": 0,
+  "grayscale_raster_files": 126,
+  "grayscale_pdf_files": 63,
+  "source_npz_hashes_unchanged": 42,
+  "geometry_metadata_files_matching_latest_desktop_model": 5,
+  "local_vs_publish_copy_sha256_matches": 189,
+  "panel_distance_alignment": "same physical width and 0-3 m axis; s=3-x_model",
+  "geometry_policy": "true plane intersections, analytical schematic; simulation uses 10 mm voxels",
+  "raw_Ex_policy": "original signed field without filtering or gain",
+  "magnitude_policy": "computed from original three component fields after documented bandpass, then late gain"
+}
