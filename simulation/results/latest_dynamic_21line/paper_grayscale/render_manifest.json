@@ -1,0 +1,90 @@
+{
+  "line_count": 21,
+  "trace_count_per_line": 601,
+  "samples_per_trace": 521,
+  "source_hashes": {
+    "line_001_components.npz": "24b5919bdd75a8f9a7d921f02bf9d80bb482f8205656b284f955576da07ed2e4",
+    "processed\\line_001\\synthetic_amplitude.npz": "8e41637a7ea877279893a23d98c36a924878671336a68c743a07dbcfcfc00afc",
+    "line_002_components.npz": "5e7a2dca328753ae3a772aaeb7514a297c7f2b622f60e98f5bfdc55f068d3e2b",
+    "processed\\line_002\\synthetic_amplitude.npz": "7d238574ccb7f2883f1fe91ebb4eb3bf3e8200f3d22643739888d6215e4d7acd",
+    "line_003_components.npz": "25e29b4e3d574a16a6cd9cd9c1772fb4c61acdedd5e1ea5b2657bb19c8e876d1",
+    "processed\\line_003\\synthetic_amplitude.npz": "e499110cbdcae21bf4e0c280472b4afadd1afe183270c1942d5be4e2178e872e",
+    "line_004_components.npz": "46ea814310d90cdd9ec96fbe865b18497e8fbc02f1f34ef66ea757e499f55d74",
+    "processed\\line_004\\synthetic_amplitude.npz": "adbbb4fdefff63be06db9f471dbe16014c34b70b07ed47ae4504855fb3bbe40b",
+    "line_005_components.npz": "ae44f7b98f5ab68b184128e95e745a8809a0b64deb56eaad3fa9ac55b5ed41fe",
+    "processed\\line_005\\synthetic_amplitude.npz": "86ade6d5bee06d2d901a832311a633e70f4ffeaddcb348f82c637c17335e9295",
+    "line_006_components.npz": "25ed9e344dd9f48f2cdf6b6975fa554d46298870e32d67d0ffe9be3b12e9206e",
+    "processed\\line_006\\synthetic_amplitude.npz": "859619493782bb359d4bc697811354d769a19377e0354b71cda4d52765165365",
+    "line_007_components.npz": "d99f7e5a0bc6970dfbfbe644d42e8e93e0a45ffc79da567beeebdb778b42cdd8",
+    "processed\\line_007\\synthetic_amplitude.npz": "7af345ecb399ebf9eb3f2577cac20d2544fdea68034b4409ae2018bcccb609d2",
+    "line_008_components.npz": "93510b8e07b643bf44359ef599c3d4341fb31b0cbd9e341b17a3c106ba4460d8",
+    "processed\\line_008\\synthetic_amplitude.npz": "804754e9c1c81f6b6902c8130b4e907e2f81a49271b64820f162d7fd439d9b44",
+    "line_009_components.npz": "7711b96fb53b58e952d9c6595dedd27aed7365fbfb449d7a3135146954102b3b",
+    "processed\\line_009\\synthetic_amplitude.npz": "0fc6cc8c25d4853b7dfa31145b7aeca0d44dcf272fbeb14ca4f019cc277a21ab",
+    "line_010_components.npz": "dd6a784b773dd74daf9e222a58994f15f6982800f1e5d5ee31cff9c44e5d3899",
+    "processed\\line_010\\synthetic_amplitude.npz": "07e16f8693daf8e01173e0d796093884aa64902551a98139ce8da4ccfcaf9981",
+    "line_011_components.npz": "9a2881bec4e822d0deb2c182c6b135158ad1ae7d5026ee4604e42f323fa0b4af",
+    "processed\\line_011\\synthetic_amplitude.npz": "8eec3ebebbbdffeffbb4812e33d2ee31edd0bd5c62268153921f23f52570a38a",
+    "line_012_components.npz": "b93528fc03d0cd78beef79e4a085ffd70c83397098e6d4eb844f42dcda82bc9d",
+    "processed\\line_012\\synthetic_amplitude.npz": "b3fd8c959926d8be13d7eb5d823fff61cfe590e98d33a2b08f8c8e62dfcbfd4b",
+    "line_013_components.npz": "1a15fc8ecec0b25dc7775627e324ddbb054ccd4aec1d4f797b388807a6af6272",
+    "processed\\line_013\\synthetic_amplitude.npz": "a22f72f9d9d56b1732d423a2ceafd31c641c9476b18d91599a23d7fe1a158f72",
+    "line_014_components.npz": "e84ae29bedb22a42b1aa5907f8a09887395076d32e40c38ca384b7ccf91f3348",
+    "processed\\line_014\\synthetic_amplitude.npz": "45b2ec279bd3a33aa2772f16d612d8ff1b4adf11536bf7f094ce66326ca9a709",
+    "line_015_components.npz": "373ac3017aefb839b7f666c8b535e6630cd1eed7d370e34c6c0a0d890d000d54",
+    "processed\\line_015\\synthetic_amplitude.npz": "f9303b4f0dd6a167cb216b1c6fca517aced37feee835476df46bb4aaeb7363de",
+    "line_016_components.npz": "7927b39207a6897c8c08c12c19963d9415e97925135d74270594bde267c76e31",
+    "processed\\line_016\\synthetic_amplitude.npz": "e757c39986948809d2670e7ca5b5540321c982ff348465982e881a181a83b3ae",
+    "line_017_components.npz": "5fe8a65d932b1323b30cea5c9826b3af28412aa0d929d194c24ca92e25d33600",
+    "processed\\line_017\\synthetic_amplitude.npz": "6af64c78c5bb52e664fedb6726acc10d98605fbb3aae79c1bbfc02f01276854a",
+    "line_018_components.npz": "c408a69a8e1f354c5942854d81c90a7250cc770d064c06ed7f1646803876d8ea",
+    "processed\\line_018\\synthetic_amplitude.npz": "6ffacfce7c8a407a93268ffe41fe987d75ebd340aeec25d1ce1ddc589fffab9c",
+    "line_019_components.npz": "dec9fe5b4482dbeb2f66ed8630e1b51f7be7580763f4e393e74df23a01bca4d0",
+    "processed\\line_019\\synthetic_amplitude.npz": "ece7e924f98e07037ac1414092cdf931265362bb973d560c007279346e98d0e4",
+    "line_020_components.npz": "17af47a5a5afd4ed93908da368523c9971e610668b42eaeed18936fc26487355",
+    "processed\\line_020\\synthetic_amplitude.npz": "30b269c902c2757580ed47ffc5135a74856a060cb8cb0241dcdbc9ecadd22094",
+    "line_021_components.npz": "b225a905891ffb8f6d0289f278d3301216f90b01c33da5df8f10e788d3d9717b",
+    "processed\\line_021\\synthetic_amplitude.npz": "1e083d2930388c10792969e0c10c0cae070dbc3f002e294bb2e3c05fed9d2565"
+  },
+  "format": {
+    "PNG": "600 dpi, 8-bit grayscale",
+    "PDF": "vector text plus raster radar data",
+    "JPG": "300 dpi, 8-bit grayscale",
+    "size_inches": [
+      7.2,
+      3.8
+    ]
+  },
+  "primary_product": "grayscale_Ex_late_gain",
+  "signed_products": "negative black; zero mid-gray; positive white",
+  "magnitude_product": "sqrt(Ex^2+Ey^2+Ez^2), black zero to white maximum; no polarity",
+  "clip": {
+    "percentile": 99.5,
+    "scope": "all 21 lines share one limit per product; raw uses full window, processed full-window displays estimate clip from 1.2-10 ns to prevent direct-wave domination, late detail uses 5-10 ns",
+    "absolute_limits": {
+      "raw_Ex": 200.00369262695312,
+      "grayscale_Ex_late_gain": 24.617877415030414,
+      "synthetic_magnitude_gray": 26.18450353193527,
+      "late_window_Ex": 19.240001846953373
+    },
+    "colorbar": "data divided by product clip limit; saturated beyond +/-1"
+  },
+  "gain": "saved gain: 1x before 5 ns; quadratic rise to 6x from 5 to 8 ns; 6x thereafter",
+  "time_ns": [
+    0,
+    10
+  ],
+  "late_crop_ns": [
+    5,
+    10
+  ],
+  "distance_m": [
+    0,
+    3
+  ],
+  "time_sample_end_ns": 10.014333724975586,
+  "data_policy": "raw/processed NPZ unchanged; no new per-trace normalization, smoothing or gap interpolation",
+  "input_policy": "Original gprMax Ex/Ey/Ez arrays in line_###_components.npz; no JPG, PNG, or PDF is read as plotting input",
+  "filter": "recomputed from original component fields: trace mean removed then 4th-order zero-phase Butterworth 0.25-2.60 GHz; no 1.5 ns Dewow applied",
+  "late_window_scale": "independent common clip estimated only from 5-10 ns; not directly comparable to full-window shades"
+}

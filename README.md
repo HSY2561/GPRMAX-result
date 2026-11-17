@@ -1,8 +1,16 @@
-# Dongzhi-Nan latest model preview
+# Dongzhi-Nan gprMax results
 
-This branch was cleaned for the latest model. It contains the completed line 001 preview while lines 002-021 continue on the local GPU.
+## Publication grayscale radargrams — 21 horizontal lines
 
-- Model: 3.0 m x 2.0 m x 0.45 m, z=-0.025..0.425 m.
-- FDTD grid: 10 mm; trace spacing: 5 mm; 2.5 GHz Ricker; Tx/Rx separation 46 mm.
-- Moving housing: 100 mm x 100 mm, rebuilt for every Tx/Rx position.
-- Image processing: vector synthetic amplitude, 0.25-2.60 GHz bandpass, 5-8 ns late gain.
+The latest figures are regenerated directly from gprMax Ex/Ey/Ez numerical arrays, rather than recolored purple pictures.
+
+- [21-line grayscale gallery](simulation/results/latest_dynamic_21line/paper_grayscale/preview_gallery.md)
+- [600 dpi PNG, PDF and JPG files](simulation/results/latest_dynamic_21line/paper_grayscale/)
+- [Rendering method, common scales and gain documentation](simulation/results/latest_dynamic_21line/paper_grayscale/README.md)
+- [Reproducible Python renderer](scripts/render_paper_grayscale.py)
+
+Main figures preserve signed Ex (negative black, zero mid-gray, positive white). Nonnegative vector magnitude is supplied separately as grayscale, alongside raw signed Ex and a 5–10 ns detail view. All 21 lines share a common scale within each figure product. The original numerical data are preserved locally in `C:\gprmax_latest\results`.
+
+Existing vertical-scan comparison results remain under `simulation/results/竖向测线/`. These belong to a separate set from the 21 horizontal lines.
+
+The old line-001 preview link now displays a newly plotted grayscale magnitude figure. Purple raster previews have been superseded.
