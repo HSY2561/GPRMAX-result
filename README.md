@@ -13,4 +13,4 @@ Main figures preserve signed Ex (negative black, zero mid-gray, positive white).
 
 Existing vertical-scan comparison results remain under `simulation/results/竖向测线/`. These belong to a separate set from the 21 horizontal lines.
 
-The old line-001 preview link now displays a newly plotted grayscale magnitude figure. Purple raster previews have been superseded.
+Purple raster previews have been removed. Use the complete grayscale gallery linked above.
