@@ -1,0 +1,55 @@
+{
+  "validation": "passed",
+  "rendered_lines": 30,
+  "individual_jpg": 150,
+  "comparison_jpg": 30,
+  "comparison_pdf": 30,
+  "original_npz_hashes_unchanged": 30,
+  "grayscale_pixel_check": "150/150 passed",
+  "raster_dpi": 300,
+  "pdf_embedded_truetype_font": true,
+  "old_directory_cleanup": [
+    {
+      "copy": "github_GPRMAX-result_readonly",
+      "directory": "simulation/results/竖向测线/comparison_panels",
+      "files": 34
+    },
+    {
+      "copy": "github_GPRMAX-result_readonly",
+      "directory": "simulation/results/竖向测线/comparison_panels_enhanced",
+      "files": 32
+    },
+    {
+      "copy": "github_GPRMAX-result_readonly",
+      "directory": "simulation/results/竖向测线/comparison_panels_multichannel",
+      "files": 34
+    },
+    {
+      "copy": "github_GPRMAX-result_readonly",
+      "directory": "simulation/results/竖向测线/component_panels",
+      "files": 32
+    },
+    {
+      "copy": "github_GPRMAX-result_readonly",
+      "directory": "simulation/results/竖向测线/grayscale_enhanced",
+      "files": 122
+    },
+    {
+      "copy": "publish_vertical_tmp",
+      "directory": "simulation/results/竖向测线/comparison_panels",
+      "files": 34
+    },
+    {
+      "copy": "publish_vertical_tmp",
+      "directory": "simulation/results/竖向测线/comparison_panels_multichannel",
+      "files": 34
+    },
+    {
+      "copy": "publish_vertical_tmp",
+      "directory": "simulation/results/竖向测线/grayscale_enhanced",
+      "files": 122
+    }
+  ],
+  "git_history_rewritten": false,
+  "scope": "current vertical-line figures only; original NPZ/model/geometry/C-scan preserved"
+}

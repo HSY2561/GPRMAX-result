@@ -1,0 +1,537 @@
+{
+  "line_count": 30,
+  "rendered_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "panel_order": [
+    "geometry",
+    "Esynthetic_reference",
+    "Ex",
+    "Ey",
+    "Ez",
+    "Esynthetic_processed"
+  ],
+  "runtime": "gprMax Python environment; saved receiver fields, no FDTD rerun",
+  "nominal_time_window_ns": 10.0,
+  "dt_s_reconstructed_from_3d_cfl": 1.9258332015464704e-11,
+  "last_sample_time_ns": 10.014332648041645,
+  "original_npz_time_axis_retained_unchanged": true,
+  "time_axis_correction": "arange(521)*dt instead of legacy linspace(0,10,521); no time-zero calibration",
+  "components": "Ex/Ey/Ez are receiver components from the SAME x-polarised source",
+  "processing": "signed components: dewow 1.5 ns -> zero-phase Butterworth order 4 0.25-2.60 GHz -> median background across traces -> gain",
+  "gain": "(1+4*min(t/10ns,1)^2)*(1+clip((t-5ns)/3ns,0,1)); capped at 10; no AGC",
+  "reference_magnitude": "sqrt(raw Ex^2+raw Ey^2+raw Ez^2); no processing or polarity invention",
+  "processed_magnitude": "sqrt(processed Ex^2+processed Ey^2+processed Ez^2)",
+  "grayscale": "gray_r; signed components: zero mid-gray, negative white, positive black; magnitudes: zero white",
+  "scale_policy": "99th percentile pooled across all 30 lines, one constant per panel family; directions independently scaled, not amplitude-comparable",
+  "normalisation_scales_v_per_m_after_gain": {
+    "Esynthetic_reference": 136.52380452943729,
+    "Ex": 16.492238765661806,
+    "Ey": 2.1248378077862227,
+    "Ez": 3.8198267693035826,
+    "Esynthetic_processed": 16.77561595105668
+  },
+  "image_interpolation": "nearest, no spatial smoothing",
+  "no_exclusions": {
+    "lines": 30,
+    "traces_per_line": 401,
+    "samples_per_trace": 521
+  },
+  "limitations": [
+    "10 mm FDTD mesh quantises nominal 5 mm steps; repeated adjacent traces retained",
+    "background removal may suppress continuous horizontal reflectors",
+    "late gain amplifies noise and multiples as well as targets; no target detection claimed",
+    "nonnegative vector magnitudes cannot have signed phase",
+    "display revision is not a new antenna model or a convergence study"
+  ],
+  "source_sha256": {
+    "line_01_components.npz": "318a60453e87dfede014c0570c5e3016d3d2d9a19d5b771eda155a1759fdd694",
+    "line_02_components.npz": "e22eff02e5b85261a45416fd87ae76faee45be78ec5049a1b375bee7c9a8d324",
+    "line_03_components.npz": "d0feff1e348169f95d6fc235dde7f2bb982ce8efa5f1a151b1e844b368bc59f6",
+    "line_04_components.npz": "140b14b39bea84fe684a2ab96e774d20a56ae7bb6db222b4e9a600ba33d28a7e",
+    "line_05_components.npz": "46f0d8efc48548486c12ceb3c89ac4630886d3b31104a5c0b92df2aa4d968064",
+    "line_06_components.npz": "4debcda10ac4a611c4bfb578882b1ab8524bfd76b745176cd0286406b803de2a",
+    "line_07_components.npz": "3087fda436a6755a0f0c60e11db17b2bdc165eb0eabfaa6515454519e2c5e1c5",
+    "line_08_components.npz": "bf134a48b4a18ffca0be92ed62c7b92fa01657a1586765eb65ad538e11a5d398",
+    "line_09_components.npz": "fc8df77554800cfa09d0662d83b5ad8b799a8de390cc600ce194efcce79f132e",
+    "line_10_components.npz": "8383d303ebcfe9c6af837e2bd75d44a107196f20e882dbdec2b98687d283c688",
+    "line_11_components.npz": "c6442ac416eff9386d38befd569bcc7a0952d898e1f8aa2bc3355586a4389ab2",
+    "line_12_components.npz": "7fe888eb49d903f3582247024196daf33a46fe169b345f48f38f4d579cb740fd",
+    "line_13_components.npz": "f267743f8b9feb87572dcc1d18f04057bccee74af012b849b8f13892239ffbff",
+    "line_14_components.npz": "907b2e65ab002b08ceac12428db106f4f6a2645bd12d1f3053f5a3c390166af3",
+    "line_15_components.npz": "206c35e29234158dfba0d8c6358bce9fb7eb16e8ec752d05e8df82c4e09be112",
+    "line_16_components.npz": "ac5e3daed499b6a3ac142a1305c84056aba3d9ce4f77d8c4c560950455ec622e",
+    "line_17_components.npz": "9a3352628ce94c55bc688778d81a946d6e57ba6abc4df6e8e4f483e65be23030",
+    "line_18_components.npz": "0ff32d6da6f0a2cf43a42952502a7f01e5b7279327440926bdb6e1f3b7c1da30",
+    "line_19_components.npz": "c2f2960349bb5128b6445222e11991c33dc569dff094dbe69e8808141432f188",
+    "line_20_components.npz": "c7ec4e2da0084904332f2ae36b491ecb38062d5d1ba96b461da2c0fa8481d7f7",
+    "line_21_components.npz": "dc235546a4ff9b98b007149ae27dea94b9ddce25267ee6758e5b26f2a8563cad",
+    "line_22_components.npz": "01bc8e2b6beb6586d8c7ce0652b8cd6b0b14f6f4c9c4748f3b7f0a2d71fc769b",
+    "line_23_components.npz": "ce097eba1efcf91adf49af7809446a650688b2c7e24f356c3e18698d367a1e50",
+    "line_24_components.npz": "8b6af4b69580848cfe6f9974ecbbd322ded175659996c94e9ac0ae21711996c0",
+    "line_25_components.npz": "69618e50356440f42a7e4790cb1c218b6d688ad2c69385150188649a786ea807",
+    "line_26_components.npz": "c26870d0488ffb751104a2ea650a916ce8721e2a9c933eea94b561052953aa19",
+    "line_27_components.npz": "254f654fa12d4946695410620f696ff3f13ce29657d9ac8ceee02a9e980b33d3",
+    "line_28_components.npz": "0f44b8c21ea4551f9eca168e542edbd7595569feaa91a30d93a201009c53a5e3",
+    "line_29_components.npz": "3dc5b19128bdd198453b77b454914d2c196bb69cc1a2cb0f39101f2dc9f37660",
+    "line_30_components.npz": "bfcb16496fc5df41247d205422a3a680d360afe4a0e0ec520afd3df5098604a0"
+  },
+  "per_line_qa": [
+    {
+      "line": 1,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.010018140828351386,
+        "Ex": 0.009750096926589477,
+        "Ey": 0.0025368440702466482,
+        "Ez": 0.0004068523508886134,
+        "Esynthetic_processed": 0.009338458077455114
+      }
+    },
+    {
+      "line": 2,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.00425998343871607,
+        "Ey": 0.009845826891504443,
+        "Ez": 0.012861320786325932,
+        "Esynthetic_processed": 0.00428870242819056
+      }
+    },
+    {
+      "line": 3,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.009994208337122645,
+        "Ey": 0.01254062540386079,
+        "Ez": 0.012674647354741745,
+        "Esynthetic_processed": 0.010271825235376052
+      }
+    },
+    {
+      "line": 4,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.012708152842461982,
+        "Ey": 0.011444517305584408,
+        "Ez": 0.006514424112463563,
+        "Esynthetic_processed": 0.0126602878600045
+      }
+    },
+    {
+      "line": 5,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.010865351017848851,
+        "Ey": 0.012784736814393958,
+        "Ez": 0.009142211649379431,
+        "Esynthetic_processed": 0.010836632028374362
+      }
+    },
+    {
+      "line": 6,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.010391487691519761,
+        "Ey": 0.00708880390195337,
+        "Ez": 0.012042829586302957,
+        "Esynthetic_processed": 0.010439352673977245
+      }
+    },
+    {
+      "line": 7,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.011937526624896493,
+        "Ey": 0.011784358681032543,
+        "Ez": 0.013536217038976455,
+        "Esynthetic_processed": 0.011994964603845472
+      }
+    },
+    {
+      "line": 8,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.013588868519679687,
+        "Ey": 0.00955863699675954,
+        "Ez": 0.008385944926551184,
+        "Esynthetic_processed": 0.013473992561781726
+      }
+    },
+    {
+      "line": 9,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.009874545880978934,
+        "Ey": 0.0077397676633751515,
+        "Ez": 0.0066819515510647565,
+        "Esynthetic_processed": 0.009898478372207677
+      }
+    },
+    {
+      "line": 10,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.004571105824689716,
+        "Ey": 0.007529161740562222,
+        "Ez": 0.007591386217756951,
+        "Esynthetic_processed": 0.004508881347494986
+      }
+    },
+    {
+      "line": 11,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.010018140828351386,
+        "Ex": 0.009970275845893902,
+        "Ey": 0.0040972424983606245,
+        "Ez": 0.0030633588772789717,
+        "Esynthetic_processed": 0.009601715480971277
+      }
+    },
+    {
+      "line": 12,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.004446656870300257,
+        "Ey": 0.008984257207269733,
+        "Ez": 0.011640763733660091,
+        "Esynthetic_processed": 0.004398791887842773
+      }
+    },
+    {
+      "line": 13,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.013057567214401615,
+        "Ey": 0.008318933951110706,
+        "Ez": 0.01018566826695258,
+        "Esynthetic_processed": 0.013043207719664371
+      }
+    },
+    {
+      "line": 14,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.012779950316148208,
+        "Ey": 0.011923167130159246,
+        "Ez": 0.014799852575854032,
+        "Esynthetic_processed": 0.012966623747732397
+      }
+    },
+    {
+      "line": 15,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.012349165474030853,
+        "Ey": 0.015446029839030064,
+        "Ez": 0.017848851958395757,
+        "Esynthetic_processed": 0.012602849881055518
+      }
+    },
+    {
+      "line": 16,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.011114248926627768,
+        "Ey": 0.00976924291957247,
+        "Ez": 0.009783602414309716,
+        "Esynthetic_processed": 0.011123821923119266
+      }
+    },
+    {
+      "line": 17,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.0107217560704764,
+        "Ey": 0.013201162161774067,
+        "Ez": 0.016747957361873626,
+        "Esynthetic_processed": 0.010798340042408374
+      }
+    },
+    {
+      "line": 18,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.012794309810885455,
+        "Ey": 0.011583325754711112,
+        "Ez": 0.010496790652926226,
+        "Esynthetic_processed": 0.012799096309131203
+      }
+    },
+    {
+      "line": 19,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.009309739087980624,
+        "Ey": 0.011865729151210267,
+        "Ez": 0.008543899368660882,
+        "Esynthetic_processed": 0.00941025555114134
+      }
+    },
+    {
+      "line": 20,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.004341353908893793,
+        "Ey": 0.010113870793266354,
+        "Ez": 0.009486839523073314,
+        "Esynthetic_processed": 0.004394005389597025
+      }
+    },
+    {
+      "line": 21,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.010018140828351386,
+        "Ex": 0.010530296140646465,
+        "Ey": 0.0038674905825647017,
+        "Ez": 0.0011822650666998532,
+        "Esynthetic_processed": 0.010118657291512102
+      }
+    },
+    {
+      "line": 22,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.004508881347494986,
+        "Ey": 0.008658775326558843,
+        "Ez": 0.009908051368699173,
+        "Esynthetic_processed": 0.004484948856266244
+      }
+    },
+    {
+      "line": 23,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.012143346049463672,
+        "Ey": 0.007419072280910009,
+        "Ez": 0.005920898329990762,
+        "Esynthetic_processed": 0.011971032112616731
+      }
+    },
+    {
+      "line": 24,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.012645928365267255,
+        "Ey": 0.009802748407292708,
+        "Ez": 0.010621239607315683,
+        "Esynthetic_processed": 0.01262678237228426
+      }
+    },
+    {
+      "line": 25,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.011865729151210267,
+        "Ey": 0.013019275228435628,
+        "Ez": 0.014101023831974766,
+        "Esynthetic_processed": 0.012047616084548705
+      }
+    },
+    {
+      "line": 26,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.011444517305584408,
+        "Ey": 0.009931983859927915,
+        "Ez": 0.0080413170528573,
+        "Esynthetic_processed": 0.011521101277516382
+      }
+    },
+    {
+      "line": 27,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.011344000842423691,
+        "Ey": 0.014675403621464573,
+        "Ez": 0.018413658751394068,
+        "Esynthetic_processed": 0.01155460676523662
+      }
+    },
+    {
+      "line": 28,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.012277368000344627,
+        "Ey": 0.01194231312314224,
+        "Ez": 0.012023683593319963,
+        "Esynthetic_processed": 0.01227258150209888
+      }
+    },
+    {
+      "line": 29,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.01039627418976551,
+        "Ey": 0.009869759382733186,
+        "Ez": 0.008362012435322443,
+        "Esynthetic_processed": 0.010535082638892213
+      }
+    },
+    {
+      "line": 30,
+      "shape": [
+        401,
+        521
+      ],
+      "clipped_fraction_by_panel": {
+        "Esynthetic_reference": 0.009979848842385399,
+        "Ex": 0.0040158720281829015,
+        "Ey": 0.012655501361758751,
+        "Ez": 0.00899383020376123,
+        "Esynthetic_processed": 0.00402065852642865
+      }
+    }
+  ],
+  "exports": {
+    "individual_jpg": 150,
+    "comparison_jpg": 30,
+    "comparison_pdf": 30,
+    "overview_jpg": 1,
+    "dpi": 300
+  }
+}
