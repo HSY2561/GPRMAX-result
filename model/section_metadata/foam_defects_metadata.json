@@ -1,0 +1,297 @@
+{
+  "view": "A face, cells 3-5 in row 1, cells 8-10 in row 2 and cells 13-15 in row 3",
+  "cell_size_m": [
+    0.5,
+    0.5,
+    0.4
+  ],
+  "diagonal_definition": "A-face right-bottom corner to corresponding B-face left-top corner",
+  "A_face_outer_z_m": 0.38,
+  "B_face_outer_z_m": 0.04,
+  "defects": [
+    {
+      "cell": 3,
+      "shape": "cube",
+      "size_m": 0.15,
+      "center_m": [
+        1.5833333333333333,
+        1.4166666666666667,
+        0.26666666666666666
+      ],
+      "file": "cell3_cube15cm.vtp",
+      "division": "1/3"
+    },
+    {
+      "cell": 3,
+      "shape": "cube",
+      "size_m": 0.1,
+      "center_m": [
+        1.4166666666666667,
+        1.5833333333333333,
+        0.15333333333333332
+      ],
+      "file": "cell3_cube10cm.vtp",
+      "division": "2/3"
+    },
+    {
+      "cell": 4,
+      "shape": "sphere",
+      "diameter_m": 0.15,
+      "center_m": [
+        2.0833333333333335,
+        1.4166666666666667,
+        0.26666666666666666
+      ],
+      "file": "cell4_sphere1_d15cm.vtp",
+      "division": "1/3"
+    },
+    {
+      "cell": 4,
+      "shape": "sphere",
+      "diameter_m": 0.15,
+      "center_m": [
+        1.9166666666666667,
+        1.5833333333333333,
+        0.15333333333333332
+      ],
+      "file": "cell4_sphere2_d15cm.vtp",
+      "division": "2/3"
+    },
+    {
+      "cell": 5,
+      "shape": "sphere",
+      "diameter_m": 0.15,
+      "center_m": [
+        2.5833333333333335,
+        1.4166666666666667,
+        0.26666666666666666
+      ],
+      "file": "cell5_sphere1_d15cm.vtp",
+      "division": "1/3"
+    },
+    {
+      "cell": 5,
+      "shape": "sphere",
+      "diameter_m": 0.15,
+      "center_m": [
+        2.4166666666666665,
+        1.5833333333333333,
+        0.15333333333333332
+      ],
+      "file": "cell5_sphere2_d15cm.vtp",
+      "division": "2/3"
+    },
+    {
+      "cell": 13,
+      "shape": "cube",
+      "size_m": 0.05,
+      "center_m": [
+        1.625,
+        0.375,
+        0.295
+      ],
+      "file": "cell13_cube5cm_1.vtp",
+      "division": "1/4"
+    },
+    {
+      "cell": 13,
+      "shape": "cube",
+      "size_m": 0.05,
+      "center_m": [
+        1.5,
+        0.5,
+        0.21
+      ],
+      "file": "cell13_cube5cm_2.vtp",
+      "division": "2/4"
+    },
+    {
+      "cell": 13,
+      "shape": "cube",
+      "size_m": 0.05,
+      "center_m": [
+        1.375,
+        0.625,
+        0.125
+      ],
+      "file": "cell13_cube5cm_3.vtp",
+      "division": "3/4"
+    },
+    {
+      "cell": 14,
+      "shape": "sphere",
+      "diameter_m": 0.1,
+      "center_m": [
+        2.125,
+        0.375,
+        0.295
+      ],
+      "file": "cell14_sphere_d10cm_1.vtp",
+      "division": "1/4"
+    },
+    {
+      "cell": 14,
+      "shape": "sphere",
+      "diameter_m": 0.1,
+      "center_m": [
+        2.0,
+        0.5,
+        0.21
+      ],
+      "file": "cell14_sphere_d10cm_2.vtp",
+      "division": "2/4"
+    },
+    {
+      "cell": 14,
+      "shape": "sphere",
+      "diameter_m": 0.1,
+      "center_m": [
+        1.875,
+        0.625,
+        0.125
+      ],
+      "file": "cell14_sphere_d10cm_3.vtp",
+      "division": "3/4"
+    },
+    {
+      "cell": 15,
+      "shape": "sphere",
+      "diameter_m": 0.05,
+      "center_m": [
+        2.625,
+        0.375,
+        0.295
+      ],
+      "file": "cell15_sphere_d5cm_1.vtp",
+      "division": "1/4"
+    },
+    {
+      "cell": 15,
+      "shape": "sphere",
+      "diameter_m": 0.05,
+      "center_m": [
+        2.5,
+        0.5,
+        0.21
+      ],
+      "file": "cell15_sphere_d5cm_2.vtp",
+      "division": "2/4"
+    },
+    {
+      "cell": 15,
+      "shape": "sphere",
+      "diameter_m": 0.05,
+      "center_m": [
+        2.375,
+        0.625,
+        0.125
+      ],
+      "file": "cell15_sphere_d5cm_3.vtp",
+      "division": "3/4"
+    },
+    {
+      "cell": 8,
+      "shape": "cube",
+      "size_m": 0.1,
+      "center_m": [
+        1.4166666666666667,
+        1.0833333333333333,
+        0.26666666666666666
+      ],
+      "file": "cell8_cube10cm.vtp",
+      "division": "1/3",
+      "diagonal_definition": "A-left-top to B-right-bottom"
+    },
+    {
+      "cell": 8,
+      "shape": "cube",
+      "size_m": 0.15,
+      "center_m": [
+        1.5833333333333333,
+        0.9166666666666667,
+        0.15333333333333332
+      ],
+      "file": "cell8_cube15cm.vtp",
+      "division": "2/3",
+      "diagonal_definition": "A-left-top to B-right-bottom"
+    },
+    {
+      "cell": 9,
+      "shape": "sphere",
+      "diameter_m": 0.05,
+      "center_m": [
+        1.875,
+        1.125,
+        0.295
+      ],
+      "file": "cell9_sphere_d5cm_1.vtp",
+      "division": "1/4",
+      "diagonal_definition": "A-left-top to B-right-bottom"
+    },
+    {
+      "cell": 9,
+      "shape": "sphere",
+      "diameter_m": 0.05,
+      "center_m": [
+        2.0,
+        1.0,
+        0.21
+      ],
+      "file": "cell9_sphere_d5cm_2.vtp",
+      "division": "2/4",
+      "diagonal_definition": "A-left-top to B-right-bottom"
+    },
+    {
+      "cell": 9,
+      "shape": "sphere",
+      "diameter_m": 0.05,
+      "center_m": [
+        2.125,
+        0.875,
+        0.125
+      ],
+      "file": "cell9_sphere_d5cm_3.vtp",
+      "division": "3/4",
+      "diagonal_definition": "A-left-top to B-right-bottom"
+    },
+    {
+      "cell": 10,
+      "shape": "sphere",
+      "diameter_m": 0.1,
+      "center_m": [
+        2.375,
+        1.125,
+        0.295
+      ],
+      "file": "cell10_sphere_d10cm_1.vtp",
+      "division": "1/4",
+      "diagonal_definition": "A-left-top to B-right-bottom"
+    },
+    {
+      "cell": 10,
+      "shape": "sphere",
+      "diameter_m": 0.1,
+      "center_m": [
+        2.5,
+        1.0,
+        0.21
+      ],
+      "file": "cell10_sphere_d10cm_2.vtp",
+      "division": "2/4",
+      "diagonal_definition": "A-left-top to B-right-bottom"
+    },
+    {
+      "cell": 10,
+      "shape": "sphere",
+      "diameter_m": 0.1,
+      "center_m": [
+        2.625,
+        0.875,
+        0.125
+      ],
+      "file": "cell10_sphere_d10cm_3.vtp",
+      "division": "3/4",
+      "diagonal_definition": "A-left-top to B-right-bottom"
+    }
+  ]
+}

@@ -1,0 +1,4454 @@
+{
+  "line_count": 21,
+  "trace_count_per_line": 601,
+  "samples_per_trace": 521,
+  "primary_product": "section_and_synthetic",
+  "input_policy": "Numerical original gprMax Ex/Ey/Ez fields; no existing raster used as input",
+  "section_policy": "Actual plane intersection, not projection; analytical schematic of the geometry voxelized at 10 mm for simulation",
+  "coordinate_transform": {
+    "y_model": "raw y_m - 0.1 m",
+    "distance": "3 m - x_model",
+    "depth": "0.425 m - z_model"
+  },
+  "slab": {
+    "length_X": 3.0,
+    "width_Y": 2.0,
+    "thickness_Z": 0.45,
+    "center_Z": 0.2,
+    "z_min": -0.024999999999999994,
+    "z_max": 0.42500000000000004
+  },
+  "model_hashes": {
+    "model_metadata.json": "dfce9368bbaa1594113e284d039a0e90a450b22d263f72cacf3bcdfc9fc8188b",
+    "foam_defects_metadata.json": "31a2968f21ccf06d178327f9e759aa11a67aea46dab490eafe762fd5216f6b4e",
+    "foam_plates_metadata.json": "50213d434e84454495d09e0a09d144815762a22444ae5d79db6bd476e3348864",
+    "additional_rebars_metadata.json": "8480d7479b5d23f88d67a76a3e10298d6ea002ee47ac1dd530f6e0d031ba7402",
+    "edge_rebars_metadata.json": "6d18bbcde0672b4d6ec39a6e5f8f183d52c9a96f0e0bd51df8c987bc6a7795d2"
+  },
+  "section_inventory": [
+    {
+      "line": 1,
+      "y_m": 1.4901161138336505e-09,
+      "objects": [],
+      "steel_sections": 0,
+      "EPS_sections": 0
+    },
+    {
+      "line": 2,
+      "y_m": 0.10000000298023223,
+      "objects": [
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_1",
+          "s": 2.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_2",
+          "s": 2.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_3",
+          "s": 1.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_4",
+          "s": 1.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_5",
+          "s": 0.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_6",
+          "s": 0.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_1",
+          "s": 2.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_2",
+          "s": 2.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_3",
+          "s": 1.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_4",
+          "s": 1.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_5",
+          "s": 0.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_6",
+          "s": 0.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A1",
+          "s": 2.625,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A2",
+          "s": 2.5,
+          "depth": 0.030000000000000027,
+          "radius": 0.005
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A3",
+          "s": 2.375,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A4",
+          "s": 2.125,
+          "depth": 0.029000000000000026,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A5",
+          "s": 2.0,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A6",
+          "s": 1.875,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B1",
+          "s": 2.625,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B2",
+          "s": 2.5,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B3",
+          "s": 2.375,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B4",
+          "s": 2.125,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B5",
+          "s": 2.0,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B6",
+          "s": 1.875,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-left",
+          "s": 2.875,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-right",
+          "s": 0.125,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "EPS plate",
+          "shape": "rectangle",
+          "id": "foam_plate_A_cell13_lower_region.vtp",
+          "s": 1.25,
+          "depth": 0.04500000000000005,
+          "width": 0.5,
+          "height": 0.01
+        }
+      ],
+      "steel_sections": 26,
+      "EPS_sections": 1
+    },
+    {
+      "line": 3,
+      "y_m": 0.20000001192092895,
+      "objects": [
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_1",
+          "s": 2.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_2",
+          "s": 2.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_3",
+          "s": 1.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_4",
+          "s": 1.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_5",
+          "s": 0.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_6",
+          "s": 0.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_1",
+          "s": 2.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_2",
+          "s": 2.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_3",
+          "s": 1.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_4",
+          "s": 1.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_5",
+          "s": 0.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_6",
+          "s": 0.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A1",
+          "s": 2.625,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A2",
+          "s": 2.5,
+          "depth": 0.030000000000000027,
+          "radius": 0.005
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A3",
+          "s": 2.375,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A4",
+          "s": 2.125,
+          "depth": 0.029000000000000026,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A5",
+          "s": 2.0,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A6",
+          "s": 1.875,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B1",
+          "s": 2.625,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B2",
+          "s": 2.5,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B3",
+          "s": 2.375,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B4",
+          "s": 2.125,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B5",
+          "s": 2.0,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B6",
+          "s": 1.875,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-left",
+          "s": 2.875,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-right",
+          "s": 0.125,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "EPS plate",
+          "shape": "rectangle",
+          "id": "foam_plate_A_cell13_lower_region.vtp",
+          "s": 1.25,
+          "depth": 0.04500000000000005,
+          "width": 0.5,
+          "height": 0.01
+        }
+      ],
+      "steel_sections": 26,
+      "EPS_sections": 1
+    },
+    {
+      "line": 4,
+      "y_m": 0.3000000059604645,
+      "objects": [
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_1",
+          "s": 2.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_2",
+          "s": 2.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_3",
+          "s": 1.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_4",
+          "s": 1.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_5",
+          "s": 0.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_6",
+          "s": 0.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_1",
+          "s": 2.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_2",
+          "s": 2.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_3",
+          "s": 1.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_4",
+          "s": 1.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_5",
+          "s": 0.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_6",
+          "s": 0.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A1",
+          "s": 2.625,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A2",
+          "s": 2.5,
+          "depth": 0.030000000000000027,
+          "radius": 0.005
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A3",
+          "s": 2.375,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A4",
+          "s": 2.125,
+          "depth": 0.029000000000000026,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A5",
+          "s": 2.0,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A6",
+          "s": 1.875,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B1",
+          "s": 2.625,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B2",
+          "s": 2.5,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B3",
+          "s": 2.375,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B4",
+          "s": 2.125,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B5",
+          "s": 2.0,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B6",
+          "s": 1.875,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-left",
+          "s": 2.875,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-right",
+          "s": 0.125,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        }
+      ],
+      "steel_sections": 26,
+      "EPS_sections": 0
+    },
+    {
+      "line": 5,
+      "y_m": 0.4,
+      "objects": [
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_1",
+          "s": 2.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_2",
+          "s": 2.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_3",
+          "s": 1.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_4",
+          "s": 1.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_5",
+          "s": 0.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_6",
+          "s": 0.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_1",
+          "s": 2.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_2",
+          "s": 2.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_3",
+          "s": 1.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_4",
+          "s": 1.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_5",
+          "s": 0.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_6",
+          "s": 0.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A1",
+          "s": 2.625,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A2",
+          "s": 2.5,
+          "depth": 0.030000000000000027,
+          "radius": 0.005
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A3",
+          "s": 2.375,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A4",
+          "s": 2.125,
+          "depth": 0.029000000000000026,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A5",
+          "s": 2.0,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A6",
+          "s": 1.875,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B1",
+          "s": 2.625,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B2",
+          "s": 2.5,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B3",
+          "s": 2.375,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B4",
+          "s": 2.125,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B5",
+          "s": 2.0,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B6",
+          "s": 1.875,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-left",
+          "s": 2.875,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-right",
+          "s": 0.125,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "EPS",
+          "shape": "rectangle",
+          "id": "cell13_cube5cm_1.vtp",
+          "cell": 13,
+          "s": 1.35,
+          "depth": 0.10500000000000007,
+          "width": 0.05,
+          "height": 0.05
+        },
+        {
+          "kind": "EPS",
+          "shape": "circle",
+          "id": "cell14_sphere_d10cm_1.vtp",
+          "cell": 14,
+          "s": 0.875,
+          "depth": 0.13000000000000006,
+          "radius": 0.043301270189221926
+        }
+      ],
+      "steel_sections": 26,
+      "EPS_sections": 2
+    },
+    {
+      "line": 6,
+      "y_m": 0.5000000238418579,
+      "objects": [
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_1",
+          "s": 2.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_2",
+          "s": 2.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_3",
+          "s": 1.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_4",
+          "s": 1.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_5",
+          "s": 0.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_6",
+          "s": 0.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_1",
+          "s": 2.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_2",
+          "s": 2.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_3",
+          "s": 1.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_4",
+          "s": 1.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_5",
+          "s": 0.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_6",
+          "s": 0.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A1",
+          "s": 2.625,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A2",
+          "s": 2.5,
+          "depth": 0.030000000000000027,
+          "radius": 0.005
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A3",
+          "s": 2.375,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A4",
+          "s": 2.125,
+          "depth": 0.029000000000000026,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A5",
+          "s": 2.0,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A6",
+          "s": 1.875,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B1",
+          "s": 2.625,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B2",
+          "s": 2.5,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B3",
+          "s": 2.375,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B4",
+          "s": 2.125,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B5",
+          "s": 2.0,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B6",
+          "s": 1.875,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-left",
+          "s": 2.875,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-right",
+          "s": 0.125,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "EPS",
+          "shape": "rectangle",
+          "id": "cell13_cube5cm_2.vtp",
+          "cell": 13,
+          "s": 1.475,
+          "depth": 0.19000000000000006,
+          "width": 0.05,
+          "height": 0.05
+        },
+        {
+          "kind": "EPS",
+          "shape": "circle",
+          "id": "cell14_sphere_d10cm_2.vtp",
+          "cell": 14,
+          "s": 1.0,
+          "depth": 0.21500000000000005,
+          "radius": 0.04999999999999432
+        },
+        {
+          "kind": "EPS",
+          "shape": "circle",
+          "id": "cell15_sphere_d5cm_2.vtp",
+          "cell": 15,
+          "s": 0.5,
+          "depth": 0.21500000000000005,
+          "radius": 0.024999999999988632
+        }
+      ],
+      "steel_sections": 26,
+      "EPS_sections": 3
+    },
+    {
+      "line": 7,
+      "y_m": 0.5999999880790711,
+      "objects": [
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_1",
+          "s": 2.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_2",
+          "s": 2.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_3",
+          "s": 1.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_4",
+          "s": 1.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_5",
+          "s": 0.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_6",
+          "s": 0.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_1",
+          "s": 2.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_2",
+          "s": 2.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_3",
+          "s": 1.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_4",
+          "s": 1.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_5",
+          "s": 0.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_6",
+          "s": 0.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A1",
+          "s": 2.625,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A2",
+          "s": 2.5,
+          "depth": 0.030000000000000027,
+          "radius": 0.005
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A3",
+          "s": 2.375,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A4",
+          "s": 2.125,
+          "depth": 0.029000000000000026,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A5",
+          "s": 2.0,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A6",
+          "s": 1.875,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B1",
+          "s": 2.625,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B2",
+          "s": 2.5,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B3",
+          "s": 2.375,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B4",
+          "s": 2.125,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B5",
+          "s": 2.0,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B6",
+          "s": 1.875,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-left",
+          "s": 2.875,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-right",
+          "s": 0.125,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "EPS",
+          "shape": "circle",
+          "id": "cell14_sphere_d10cm_3.vtp",
+          "cell": 14,
+          "s": 1.125,
+          "depth": 0.30000000000000004,
+          "radius": 0.043301263306668225
+        }
+      ],
+      "steel_sections": 26,
+      "EPS_sections": 1
+    },
+    {
+      "line": 8,
+      "y_m": 0.700000011920929,
+      "objects": [
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_1",
+          "s": 2.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_2",
+          "s": 2.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_3",
+          "s": 1.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_4",
+          "s": 1.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_5",
+          "s": 0.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_6",
+          "s": 0.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_1",
+          "s": 2.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_2",
+          "s": 2.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_3",
+          "s": 1.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_4",
+          "s": 1.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_5",
+          "s": 0.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_6",
+          "s": 0.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A1",
+          "s": 2.625,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A2",
+          "s": 2.5,
+          "depth": 0.030000000000000027,
+          "radius": 0.005
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A3",
+          "s": 2.375,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A4",
+          "s": 2.125,
+          "depth": 0.029000000000000026,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A5",
+          "s": 2.0,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A6",
+          "s": 1.875,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B1",
+          "s": 2.625,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B2",
+          "s": 2.5,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B3",
+          "s": 2.375,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B4",
+          "s": 2.125,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B5",
+          "s": 2.0,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B6",
+          "s": 1.875,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-left",
+          "s": 2.875,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-right",
+          "s": 0.125,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        }
+      ],
+      "steel_sections": 26,
+      "EPS_sections": 0
+    },
+    {
+      "line": 9,
+      "y_m": 0.7999999761581421,
+      "objects": [
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_1",
+          "s": 2.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_2",
+          "s": 2.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_3",
+          "s": 1.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_4",
+          "s": 1.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_5",
+          "s": 0.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_6",
+          "s": 0.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_1",
+          "s": 2.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_2",
+          "s": 2.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_3",
+          "s": 1.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_4",
+          "s": 1.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_5",
+          "s": 0.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_6",
+          "s": 0.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A1",
+          "s": 2.625,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A2",
+          "s": 2.5,
+          "depth": 0.030000000000000027,
+          "radius": 0.005
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A3",
+          "s": 2.375,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A4",
+          "s": 2.125,
+          "depth": 0.029000000000000026,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A5",
+          "s": 2.0,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A6",
+          "s": 1.875,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B1",
+          "s": 2.625,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B2",
+          "s": 2.5,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B3",
+          "s": 2.375,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B4",
+          "s": 2.125,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B5",
+          "s": 2.0,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B6",
+          "s": 1.875,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-left",
+          "s": 2.875,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-right",
+          "s": 0.125,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        }
+      ],
+      "steel_sections": 26,
+      "EPS_sections": 0
+    },
+    {
+      "line": 10,
+      "y_m": 0.9,
+      "objects": [
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_1",
+          "s": 2.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_2",
+          "s": 2.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_3",
+          "s": 1.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_4",
+          "s": 1.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_5",
+          "s": 0.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_6",
+          "s": 0.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_1",
+          "s": 2.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_2",
+          "s": 2.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_3",
+          "s": 1.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_4",
+          "s": 1.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_5",
+          "s": 0.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_6",
+          "s": 0.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A1",
+          "s": 2.625,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A2",
+          "s": 2.5,
+          "depth": 0.030000000000000027,
+          "radius": 0.005
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A3",
+          "s": 2.375,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A4",
+          "s": 2.125,
+          "depth": 0.029000000000000026,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A5",
+          "s": 2.0,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A6",
+          "s": 1.875,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B1",
+          "s": 2.625,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B2",
+          "s": 2.5,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B3",
+          "s": 2.375,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B4",
+          "s": 2.125,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B5",
+          "s": 2.0,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B6",
+          "s": 1.875,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-left",
+          "s": 2.875,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-right",
+          "s": 0.125,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "EPS",
+          "shape": "rectangle",
+          "id": "cell8_cube15cm.vtp",
+          "cell": 8,
+          "s": 1.3416666666666668,
+          "depth": 0.1966666666666667,
+          "width": 0.15,
+          "height": 0.15
+        },
+        {
+          "kind": "EPS",
+          "shape": "circle",
+          "id": "cell10_sphere_d10cm_3.vtp",
+          "cell": 10,
+          "s": 0.375,
+          "depth": 0.30000000000000004,
+          "radius": 0.043301270189221926
+        }
+      ],
+      "steel_sections": 26,
+      "EPS_sections": 2
+    },
+    {
+      "line": 11,
+      "y_m": 1.0000000238418578,
+      "objects": [
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_1",
+          "s": 2.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_2",
+          "s": 2.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_3",
+          "s": 1.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_4",
+          "s": 1.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_5",
+          "s": 0.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_6",
+          "s": 0.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_1",
+          "s": 2.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_2",
+          "s": 2.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_3",
+          "s": 1.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_4",
+          "s": 1.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_5",
+          "s": 0.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_6",
+          "s": 0.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A1",
+          "s": 2.625,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A2",
+          "s": 2.5,
+          "depth": 0.030000000000000027,
+          "radius": 0.005
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A3",
+          "s": 2.375,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A4",
+          "s": 2.125,
+          "depth": 0.029000000000000026,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A5",
+          "s": 2.0,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A6",
+          "s": 1.875,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B1",
+          "s": 2.625,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B2",
+          "s": 2.5,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B3",
+          "s": 2.375,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B4",
+          "s": 2.125,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B5",
+          "s": 2.0,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B6",
+          "s": 1.875,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-left",
+          "s": 2.875,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-right",
+          "s": 0.125,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "EPS",
+          "shape": "circle",
+          "id": "cell9_sphere_d5cm_2.vtp",
+          "cell": 9,
+          "s": 1.0,
+          "depth": 0.21500000000000005,
+          "radius": 0.024999999999988632
+        },
+        {
+          "kind": "EPS",
+          "shape": "circle",
+          "id": "cell10_sphere_d10cm_2.vtp",
+          "cell": 10,
+          "s": 0.5,
+          "depth": 0.21500000000000005,
+          "radius": 0.04999999999999432
+        }
+      ],
+      "steel_sections": 26,
+      "EPS_sections": 2
+    },
+    {
+      "line": 12,
+      "y_m": 1.1000000476837157,
+      "objects": [
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_1",
+          "s": 2.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_2",
+          "s": 2.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_3",
+          "s": 1.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_4",
+          "s": 1.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_5",
+          "s": 0.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_6",
+          "s": 0.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_1",
+          "s": 2.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_2",
+          "s": 2.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_3",
+          "s": 1.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_4",
+          "s": 1.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_5",
+          "s": 0.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_6",
+          "s": 0.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A1",
+          "s": 2.625,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A2",
+          "s": 2.5,
+          "depth": 0.030000000000000027,
+          "radius": 0.005
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A3",
+          "s": 2.375,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A4",
+          "s": 2.125,
+          "depth": 0.029000000000000026,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A5",
+          "s": 2.0,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A6",
+          "s": 1.875,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B1",
+          "s": 2.625,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B2",
+          "s": 2.5,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B3",
+          "s": 2.375,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B4",
+          "s": 2.125,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B5",
+          "s": 2.0,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B6",
+          "s": 1.875,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-left",
+          "s": 2.875,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-right",
+          "s": 0.125,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "EPS",
+          "shape": "rectangle",
+          "id": "cell8_cube10cm.vtp",
+          "cell": 8,
+          "s": 1.5333333333333332,
+          "depth": 0.10833333333333338,
+          "width": 0.1,
+          "height": 0.1
+        },
+        {
+          "kind": "EPS",
+          "shape": "circle",
+          "id": "cell9_sphere_d5cm_1.vtp",
+          "cell": 9,
+          "s": 1.125,
+          "depth": 0.13000000000000006,
+          "radius": 4.882810167252114e-05
+        },
+        {
+          "kind": "EPS",
+          "shape": "circle",
+          "id": "cell10_sphere_d10cm_1.vtp",
+          "cell": 10,
+          "s": 0.625,
+          "depth": 0.13000000000000006,
+          "radius": 0.04330129771939305
+        }
+      ],
+      "steel_sections": 26,
+      "EPS_sections": 3
+    },
+    {
+      "line": 13,
+      "y_m": 1.199999952316284,
+      "objects": [
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_1",
+          "s": 2.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_2",
+          "s": 2.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_3",
+          "s": 1.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_4",
+          "s": 1.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_5",
+          "s": 0.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_6",
+          "s": 0.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_1",
+          "s": 2.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_2",
+          "s": 2.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_3",
+          "s": 1.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_4",
+          "s": 1.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_5",
+          "s": 0.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_6",
+          "s": 0.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A1",
+          "s": 2.625,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A2",
+          "s": 2.5,
+          "depth": 0.030000000000000027,
+          "radius": 0.005
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A3",
+          "s": 2.375,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A4",
+          "s": 2.125,
+          "depth": 0.029000000000000026,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A5",
+          "s": 2.0,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A6",
+          "s": 1.875,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B1",
+          "s": 2.625,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B2",
+          "s": 2.5,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B3",
+          "s": 2.375,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B4",
+          "s": 2.125,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B5",
+          "s": 2.0,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B6",
+          "s": 1.875,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-left",
+          "s": 2.875,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-right",
+          "s": 0.125,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        }
+      ],
+      "steel_sections": 26,
+      "EPS_sections": 0
+    },
+    {
+      "line": 14,
+      "y_m": 1.299999976158142,
+      "objects": [
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_1",
+          "s": 2.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_2",
+          "s": 2.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_3",
+          "s": 1.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_4",
+          "s": 1.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_5",
+          "s": 0.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_6",
+          "s": 0.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_1",
+          "s": 2.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_2",
+          "s": 2.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_3",
+          "s": 1.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_4",
+          "s": 1.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_5",
+          "s": 0.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_6",
+          "s": 0.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A1",
+          "s": 2.625,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A2",
+          "s": 2.5,
+          "depth": 0.030000000000000027,
+          "radius": 0.005
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A3",
+          "s": 2.375,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A4",
+          "s": 2.125,
+          "depth": 0.029000000000000026,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A5",
+          "s": 2.0,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A6",
+          "s": 1.875,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B1",
+          "s": 2.625,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B2",
+          "s": 2.5,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B3",
+          "s": 2.375,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B4",
+          "s": 2.125,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B5",
+          "s": 2.0,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B6",
+          "s": 1.875,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-left",
+          "s": 2.875,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-right",
+          "s": 0.125,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        }
+      ],
+      "steel_sections": 26,
+      "EPS_sections": 0
+    },
+    {
+      "line": 15,
+      "y_m": 1.4,
+      "objects": [
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_1",
+          "s": 2.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_2",
+          "s": 2.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_3",
+          "s": 1.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_4",
+          "s": 1.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_5",
+          "s": 0.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_6",
+          "s": 0.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_1",
+          "s": 2.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_2",
+          "s": 2.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_3",
+          "s": 1.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_4",
+          "s": 1.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_5",
+          "s": 0.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_6",
+          "s": 0.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A1",
+          "s": 2.625,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A2",
+          "s": 2.5,
+          "depth": 0.030000000000000027,
+          "radius": 0.005
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A3",
+          "s": 2.375,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A4",
+          "s": 2.125,
+          "depth": 0.029000000000000026,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A5",
+          "s": 2.0,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A6",
+          "s": 1.875,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B1",
+          "s": 2.625,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B2",
+          "s": 2.5,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B3",
+          "s": 2.375,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B4",
+          "s": 2.125,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B5",
+          "s": 2.0,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B6",
+          "s": 1.875,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-left",
+          "s": 2.875,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-right",
+          "s": 0.125,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "EPS",
+          "shape": "rectangle",
+          "id": "cell3_cube15cm.vtp",
+          "cell": 3,
+          "s": 1.3416666666666668,
+          "depth": 0.08333333333333338,
+          "width": 0.15,
+          "height": 0.15
+        },
+        {
+          "kind": "EPS",
+          "shape": "circle",
+          "id": "cell4_sphere1_d15cm.vtp",
+          "cell": 4,
+          "s": 0.9166666666666665,
+          "depth": 0.15833333333333338,
+          "radius": 0.07312470322826764
+        },
+        {
+          "kind": "EPS",
+          "shape": "circle",
+          "id": "cell5_sphere1_d15cm.vtp",
+          "cell": 5,
+          "s": 0.4166666666666665,
+          "depth": 0.15833333333333338,
+          "radius": 0.07312470322826764
+        }
+      ],
+      "steel_sections": 26,
+      "EPS_sections": 3
+    },
+    {
+      "line": 16,
+      "y_m": 1.5000000238418578,
+      "objects": [
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_1",
+          "s": 2.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_2",
+          "s": 2.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_3",
+          "s": 1.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_4",
+          "s": 1.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_5",
+          "s": 0.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_6",
+          "s": 0.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_1",
+          "s": 2.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_2",
+          "s": 2.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_3",
+          "s": 1.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_4",
+          "s": 1.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_5",
+          "s": 0.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_6",
+          "s": 0.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A1",
+          "s": 2.625,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A2",
+          "s": 2.5,
+          "depth": 0.030000000000000027,
+          "radius": 0.005
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A3",
+          "s": 2.375,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A4",
+          "s": 2.125,
+          "depth": 0.029000000000000026,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A5",
+          "s": 2.0,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A6",
+          "s": 1.875,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B1",
+          "s": 2.625,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B2",
+          "s": 2.5,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B3",
+          "s": 2.375,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B4",
+          "s": 2.125,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B5",
+          "s": 2.0,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B6",
+          "s": 1.875,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-left",
+          "s": 2.875,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-right",
+          "s": 0.125,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        }
+      ],
+      "steel_sections": 26,
+      "EPS_sections": 0
+    },
+    {
+      "line": 17,
+      "y_m": 1.6000000476837157,
+      "objects": [
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_1",
+          "s": 2.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_2",
+          "s": 2.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_3",
+          "s": 1.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_4",
+          "s": 1.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_5",
+          "s": 0.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_6",
+          "s": 0.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_1",
+          "s": 2.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_2",
+          "s": 2.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_3",
+          "s": 1.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_4",
+          "s": 1.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_5",
+          "s": 0.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_6",
+          "s": 0.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A1",
+          "s": 2.625,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A2",
+          "s": 2.5,
+          "depth": 0.030000000000000027,
+          "radius": 0.005
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A3",
+          "s": 2.375,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A4",
+          "s": 2.125,
+          "depth": 0.029000000000000026,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A5",
+          "s": 2.0,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A6",
+          "s": 1.875,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B1",
+          "s": 2.625,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B2",
+          "s": 2.5,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B3",
+          "s": 2.375,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B4",
+          "s": 2.125,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B5",
+          "s": 2.0,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B6",
+          "s": 1.875,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-left",
+          "s": 2.875,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-right",
+          "s": 0.125,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "EPS",
+          "shape": "rectangle",
+          "id": "cell3_cube10cm.vtp",
+          "cell": 3,
+          "s": 1.5333333333333332,
+          "depth": 0.22166666666666673,
+          "width": 0.1,
+          "height": 0.1
+        },
+        {
+          "kind": "EPS",
+          "shape": "circle",
+          "id": "cell4_sphere2_d15cm.vtp",
+          "cell": 4,
+          "s": 1.0833333333333333,
+          "depth": 0.2716666666666667,
+          "radius": 0.07312469236012385
+        },
+        {
+          "kind": "EPS",
+          "shape": "circle",
+          "id": "cell5_sphere2_d15cm.vtp",
+          "cell": 5,
+          "s": 0.5833333333333335,
+          "depth": 0.2716666666666667,
+          "radius": 0.07312469236012385
+        }
+      ],
+      "steel_sections": 26,
+      "EPS_sections": 3
+    },
+    {
+      "line": 18,
+      "y_m": 1.699999952316284,
+      "objects": [
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_1",
+          "s": 2.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_2",
+          "s": 2.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_3",
+          "s": 1.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_4",
+          "s": 1.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_5",
+          "s": 0.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_6",
+          "s": 0.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_1",
+          "s": 2.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_2",
+          "s": 2.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_3",
+          "s": 1.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_4",
+          "s": 1.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_5",
+          "s": 0.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_6",
+          "s": 0.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A1",
+          "s": 2.625,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A2",
+          "s": 2.5,
+          "depth": 0.030000000000000027,
+          "radius": 0.005
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A3",
+          "s": 2.375,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A4",
+          "s": 2.125,
+          "depth": 0.029000000000000026,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A5",
+          "s": 2.0,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A6",
+          "s": 1.875,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B1",
+          "s": 2.625,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B2",
+          "s": 2.5,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B3",
+          "s": 2.375,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B4",
+          "s": 2.125,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B5",
+          "s": 2.0,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B6",
+          "s": 1.875,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-left",
+          "s": 2.875,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-right",
+          "s": 0.125,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        }
+      ],
+      "steel_sections": 26,
+      "EPS_sections": 0
+    },
+    {
+      "line": 19,
+      "y_m": 1.799999976158142,
+      "objects": [
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_1",
+          "s": 2.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_2",
+          "s": 2.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_3",
+          "s": 1.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_4",
+          "s": 1.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_5",
+          "s": 0.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_6",
+          "s": 0.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_1",
+          "s": 2.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_2",
+          "s": 2.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_3",
+          "s": 1.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_4",
+          "s": 1.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_5",
+          "s": 0.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_6",
+          "s": 0.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A1",
+          "s": 2.625,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A2",
+          "s": 2.5,
+          "depth": 0.030000000000000027,
+          "radius": 0.005
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A3",
+          "s": 2.375,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A4",
+          "s": 2.125,
+          "depth": 0.029000000000000026,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A5",
+          "s": 2.0,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A6",
+          "s": 1.875,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B1",
+          "s": 2.625,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B2",
+          "s": 2.5,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B3",
+          "s": 2.375,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B4",
+          "s": 2.125,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B5",
+          "s": 2.0,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B6",
+          "s": 1.875,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-left",
+          "s": 2.875,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-right",
+          "s": 0.125,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "EPS plate",
+          "shape": "rectangle",
+          "id": "foam_plate_A_bars3_4_5.vtp",
+          "s": 0.75,
+          "depth": 0.04500000000000005,
+          "width": 1.0,
+          "height": 0.01
+        },
+        {
+          "kind": "EPS plate",
+          "shape": "rectangle",
+          "id": "foam_plate_B_bars10_11_12.vtp",
+          "s": 0.25,
+          "depth": 0.34500000000000003,
+          "width": 1.0,
+          "height": 0.01
+        }
+      ],
+      "steel_sections": 26,
+      "EPS_sections": 2
+    },
+    {
+      "line": 20,
+      "y_m": 1.9,
+      "objects": [
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_1",
+          "s": 2.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_2",
+          "s": 2.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_3",
+          "s": 1.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_4",
+          "s": 1.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_5",
+          "s": 0.75,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_A_Y_6",
+          "s": 0.25,
+          "depth": 0.06500000000000006,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_1",
+          "s": 2.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_2",
+          "s": 2.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_3",
+          "s": 1.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_4",
+          "s": 1.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_5",
+          "s": 0.75,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "face_B_Y_6",
+          "s": 0.25,
+          "depth": 0.36500000000000005,
+          "radius": 0.01
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A1",
+          "s": 2.625,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A2",
+          "s": 2.5,
+          "depth": 0.030000000000000027,
+          "radius": 0.005
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A3",
+          "s": 2.375,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A4",
+          "s": 2.125,
+          "depth": 0.029000000000000026,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A5",
+          "s": 2.0,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A6",
+          "s": 1.875,
+          "depth": 0.027500000000000024,
+          "radius": 0.0075
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B1",
+          "s": 2.625,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B2",
+          "s": 2.5,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B3",
+          "s": 2.375,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B4",
+          "s": 2.125,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B5",
+          "s": 2.0,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "B6",
+          "s": 1.875,
+          "depth": 0.36900000000000005,
+          "radius": 0.006
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-left",
+          "s": 2.875,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "steel",
+          "shape": "circle",
+          "id": "A-edge-right",
+          "s": 0.125,
+          "depth": 0.02400000000000002,
+          "radius": 0.011
+        },
+        {
+          "kind": "EPS plate",
+          "shape": "rectangle",
+          "id": "foam_plate_A_bars3_4_5.vtp",
+          "s": 0.75,
+          "depth": 0.04500000000000005,
+          "width": 1.0,
+          "height": 0.01
+        },
+        {
+          "kind": "EPS plate",
+          "shape": "rectangle",
+          "id": "foam_plate_B_bars10_11_12.vtp",
+          "s": 0.25,
+          "depth": 0.34500000000000003,
+          "width": 1.0,
+          "height": 0.01
+        }
+      ],
+      "steel_sections": 26,
+      "EPS_sections": 2
+    },
+    {
+      "line": 21,
+      "y_m": 1.9999999046325683,
+      "objects": [],
+      "steel_sections": 0,
+      "EPS_sections": 0
+    }
+  ],
+  "raw_Ex": "Original signed Ex, no mean removal, filter or gain; black negative, middle gray zero, white positive",
+  "synthetic_magnitude_gray": "Trace means removed; 4th-order zero-phase Butterworth 0.25-2.60 GHz on each original component; sqrt(Ex_filtered^2+Ey_filtered^2+Ez_filtered^2); late gain",
+  "late_gain": "1x before 5 ns, quadratic rise 1 -> 6 from 5 -> 8 ns, 6x after 8 ns",
+  "no_dewow": true,
+  "composite_consistency": "Combined lower panel and standalone synthetic use the identical numerical matrix and common display scale",
+  "clip_limits": {
+    "raw_Ex": 200.00369262695312,
+    "synthetic_magnitude_gray": 26.18450353193527
+  },
+  "clip_percentile": 99.5,
+  "clip_scope": "Common across all 21 lines; raw full window; synthetic estimated from 1.2-10 ns with no samples removed",
+  "export": {
+    "PNG": "600 dpi grayscale",
+    "PDF": "vector labels + raster radar",
+    "JPG": "300 dpi grayscale",
+    "combined_size_inches": [
+      7.2,
+      5.4
+    ],
+    "single_size_inches": [
+      7.2,
+      3.8
+    ]
+  },
+  "source_hashes": {
+    "line_001_components.npz": "24b5919bdd75a8f9a7d921f02bf9d80bb482f8205656b284f955576da07ed2e4",
+    "processed\\line_001\\synthetic_amplitude.npz": "8e41637a7ea877279893a23d98c36a924878671336a68c743a07dbcfcfc00afc",
+    "line_002_components.npz": "5e7a2dca328753ae3a772aaeb7514a297c7f2b622f60e98f5bfdc55f068d3e2b",
+    "processed\\line_002\\synthetic_amplitude.npz": "7d238574ccb7f2883f1fe91ebb4eb3bf3e8200f3d22643739888d6215e4d7acd",
+    "line_003_components.npz": "25e29b4e3d574a16a6cd9cd9c1772fb4c61acdedd5e1ea5b2657bb19c8e876d1",
+    "processed\\line_003\\synthetic_amplitude.npz": "e499110cbdcae21bf4e0c280472b4afadd1afe183270c1942d5be4e2178e872e",
+    "line_004_components.npz": "46ea814310d90cdd9ec96fbe865b18497e8fbc02f1f34ef66ea757e499f55d74",
+    "processed\\line_004\\synthetic_amplitude.npz": "adbbb4fdefff63be06db9f471dbe16014c34b70b07ed47ae4504855fb3bbe40b",
+    "line_005_components.npz": "ae44f7b98f5ab68b184128e95e745a8809a0b64deb56eaad3fa9ac55b5ed41fe",
+    "processed\\line_005\\synthetic_amplitude.npz": "86ade6d5bee06d2d901a832311a633e70f4ffeaddcb348f82c637c17335e9295",
+    "line_006_components.npz": "25ed9e344dd9f48f2cdf6b6975fa554d46298870e32d67d0ffe9be3b12e9206e",
+    "processed\\line_006\\synthetic_amplitude.npz": "859619493782bb359d4bc697811354d769a19377e0354b71cda4d52765165365",
+    "line_007_components.npz": "d99f7e5a0bc6970dfbfbe644d42e8e93e0a45ffc79da567beeebdb778b42cdd8",
+    "processed\\line_007\\synthetic_amplitude.npz": "7af345ecb399ebf9eb3f2577cac20d2544fdea68034b4409ae2018bcccb609d2",
+    "line_008_components.npz": "93510b8e07b643bf44359ef599c3d4341fb31b0cbd9e341b17a3c106ba4460d8",
+    "processed\\line_008\\synthetic_amplitude.npz": "804754e9c1c81f6b6902c8130b4e907e2f81a49271b64820f162d7fd439d9b44",
+    "line_009_components.npz": "7711b96fb53b58e952d9c6595dedd27aed7365fbfb449d7a3135146954102b3b",
+    "processed\\line_009\\synthetic_amplitude.npz": "0fc6cc8c25d4853b7dfa31145b7aeca0d44dcf272fbeb14ca4f019cc277a21ab",
+    "line_010_components.npz": "dd6a784b773dd74daf9e222a58994f15f6982800f1e5d5ee31cff9c44e5d3899",
+    "processed\\line_010\\synthetic_amplitude.npz": "07e16f8693daf8e01173e0d796093884aa64902551a98139ce8da4ccfcaf9981",
+    "line_011_components.npz": "9a2881bec4e822d0deb2c182c6b135158ad1ae7d5026ee4604e42f323fa0b4af",
+    "processed\\line_011\\synthetic_amplitude.npz": "8eec3ebebbbdffeffbb4812e33d2ee31edd0bd5c62268153921f23f52570a38a",
+    "line_012_components.npz": "b93528fc03d0cd78beef79e4a085ffd70c83397098e6d4eb844f42dcda82bc9d",
+    "processed\\line_012\\synthetic_amplitude.npz": "b3fd8c959926d8be13d7eb5d823fff61cfe590e98d33a2b08f8c8e62dfcbfd4b",
+    "line_013_components.npz": "1a15fc8ecec0b25dc7775627e324ddbb054ccd4aec1d4f797b388807a6af6272",
+    "processed\\line_013\\synthetic_amplitude.npz": "a22f72f9d9d56b1732d423a2ceafd31c641c9476b18d91599a23d7fe1a158f72",
+    "line_014_components.npz": "e84ae29bedb22a42b1aa5907f8a09887395076d32e40c38ca384b7ccf91f3348",
+    "processed\\line_014\\synthetic_amplitude.npz": "45b2ec279bd3a33aa2772f16d612d8ff1b4adf11536bf7f094ce66326ca9a709",
+    "line_015_components.npz": "373ac3017aefb839b7f666c8b535e6630cd1eed7d370e34c6c0a0d890d000d54",
+    "processed\\line_015\\synthetic_amplitude.npz": "f9303b4f0dd6a167cb216b1c6fca517aced37feee835476df46bb4aaeb7363de",
+    "line_016_components.npz": "7927b39207a6897c8c08c12c19963d9415e97925135d74270594bde267c76e31",
+    "processed\\line_016\\synthetic_amplitude.npz": "e757c39986948809d2670e7ca5b5540321c982ff348465982e881a181a83b3ae",
+    "line_017_components.npz": "5fe8a65d932b1323b30cea5c9826b3af28412aa0d929d194c24ca92e25d33600",
+    "processed\\line_017\\synthetic_amplitude.npz": "6af64c78c5bb52e664fedb6726acc10d98605fbb3aae79c1bbfc02f01276854a",
+    "line_018_components.npz": "c408a69a8e1f354c5942854d81c90a7250cc770d064c06ed7f1646803876d8ea",
+    "processed\\line_018\\synthetic_amplitude.npz": "6ffacfce7c8a407a93268ffe41fe987d75ebd340aeec25d1ce1ddc589fffab9c",
+    "line_019_components.npz": "dec9fe5b4482dbeb2f66ed8630e1b51f7be7580763f4e393e74df23a01bca4d0",
+    "processed\\line_019\\synthetic_amplitude.npz": "ece7e924f98e07037ac1414092cdf931265362bb973d560c007279346e98d0e4",
+    "line_020_components.npz": "17af47a5a5afd4ed93908da368523c9971e610668b42eaeed18936fc26487355",
+    "processed\\line_020\\synthetic_amplitude.npz": "30b269c902c2757580ed47ffc5135a74856a060cb8cb0241dcdbc9ecadd22094",
+    "line_021_components.npz": "b225a905891ffb8f6d0289f278d3301216f90b01c33da5df8f10e788d3d9717b",
+    "processed\\line_021\\synthetic_amplitude.npz": "1e083d2930388c10792969e0c10c0cae070dbc3f002e294bb2e3c05fed9d2565"
+  },
+  "source_arrays_unchanged": true,
+  "notes": [
+    "Depth and time are different axes; no travel-time-to-depth equivalence is implied.",
+    "Lines 001 and 021 cut slab side boundaries and no steel/EPS; 3D off-plane scattering may still appear in their B-scans.",
+    "Raw z_m is a stale antenna label, not used for section geometry.",
+    "No per-trace normalization, spatial smoothing or missing-trace interpolation."
+  ]
+}

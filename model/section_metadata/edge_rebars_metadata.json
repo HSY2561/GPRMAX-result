@@ -1,0 +1,39 @@
+{
+  "description": "Two 22 mm diameter, 1.8 m long A-face edge bars",
+  "side_margin_m": 0.25,
+  "bar_length_m": 1.8,
+  "bar_diameter_m": 0.022,
+  "bars": [
+    {
+      "id": "A-edge-left",
+      "side": "left",
+      "x_m": 0.125,
+      "diameter_m": 0.022,
+      "diameter_mm": 22,
+      "length_m": 1.8,
+      "y_min_m": 0.1,
+      "y_max_m": 1.9,
+      "z_center_m": 0.401,
+      "support": "four A-face transverse bars",
+      "tangency": "lower surface of added bar tangent to upper surface of A transverse bars",
+      "margin_midpoint": "25 cm side margin midpoint",
+      "file": "edge_rebar_A_left_d22mm.vtp"
+    },
+    {
+      "id": "A-edge-right",
+      "side": "right",
+      "x_m": 2.875,
+      "diameter_m": 0.022,
+      "diameter_mm": 22,
+      "length_m": 1.8,
+      "y_min_m": 0.1,
+      "y_max_m": 1.9,
+      "z_center_m": 0.401,
+      "support": "four A-face transverse bars",
+      "tangency": "lower surface of added bar tangent to upper surface of A transverse bars",
+      "margin_midpoint": "25 cm side margin midpoint",
+      "file": "edge_rebar_A_right_d22mm.vtp"
+    }
+  ],
+  "merged_file": "edge_rebars_A.vtp"
+}
