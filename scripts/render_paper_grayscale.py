@@ -91,17 +91,16 @@ def plot(ax, row: dict, product: str, limit: float, crop=False):
     return im
 
 
-def save_figure(fig, stem: Path):
+def save_figure(fig, stem: Path, *, color=False):
     stem.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(stem.with_suffix(".png"), dpi=600, facecolor="white")
     fig.savefig(stem.with_suffix(".pdf"), dpi=600, facecolor="white",
                 metadata={"Creator": "Matplotlib; render_paper_grayscale.py"})
-    # Actual single-channel PNG/JPG avoids incidental RGB colour in exports.
     with Image.open(stem.with_suffix(".png")) as png:
-        gray = png.convert("L")
-    gray.save(stem.with_suffix(".png"), dpi=(600, 600), optimize=True)
-    preview = gray.resize((gray.width // 2, gray.height // 2), Image.Resampling.LANCZOS)
-    preview.save(stem.with_suffix(".jpg"), quality=96, dpi=(300, 300))
+        raster = png.convert("RGB" if color else "L")
+    raster.save(stem.with_suffix(".png"), dpi=(600, 600), optimize=True)
+    preview = raster.resize((raster.width // 2, raster.height // 2), Image.Resampling.LANCZOS)
+    preview.save(stem.with_suffix(".jpg"), quality=96, dpi=(300, 300), subsampling=0)
     plt.close(fig)
 
 

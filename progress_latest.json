@@ -1,7 +1,7 @@
 {
   "render_input": "gprMax original Ex/Ey/Ez numerical arrays",
   "completed_lines": 21,
-  "status": "section_and_synthetic_published",
+  "status": "fixed_offset_paper_radargrams",
   "results": "simulation/results/latest_dynamic_21line/paper_grayscale",
   "formats": [
     "PNG 600 dpi",
@@ -9,15 +9,14 @@
     "JPG 300 dpi"
   ],
   "total_lines": 21,
-  "updated": "2026-11-17 15:51:50 +08:00",
+  "updated": "2026-11-19 18:57:04 +08:00",
   "figures_per_line": 5,
   "latest_updated_products": [
     "section_and_synthetic",
-    "raw_Ex",
     "synthetic_magnitude_gray"
   ],
   "primary_product": "section_and_synthetic",
   "github_updated_lines": 21,
-  "latest_updated_files": 189,
+  "latest_updated_files": 126,
   "source_npz_hashes_unchanged": 42
 }

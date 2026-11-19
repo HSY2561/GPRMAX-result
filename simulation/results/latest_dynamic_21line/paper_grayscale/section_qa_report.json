@@ -1,27 +1,28 @@
 {
   "status": "passed",
-  "checked_at": "2026-11-17 15:50:42 +08:00",
+  "source_arrays_hash_verified": 42,
+  "current_geometry_hash_verified": 5,
   "lines": 21,
-  "products": [
-    "section_and_synthetic",
-    "raw_Ex",
-    "synthetic_magnitude_gray"
+  "original_traces": 601,
+  "displayed_computed_traces": 301,
+  "plotted_files": 126,
+  "formats": "42 JPG 300 dpi, 42 PNG 600 dpi, 42 PDF",
+  "section_png_jpg": "RGB with grayscale B-scan verified per pixel in the radar panel",
+  "standalone_png_jpg": "8-bit grayscale",
+  "reference_profiles": 45,
+  "original_palette_sha256": "8ef39f6b0fae4090ae4f1ee8366004d93c62c4f35f71cdef10a8bff8b8a640dd",
+  "direct_wave_gate_ns": [
+    0.15,
+    1.2
   ],
-  "figures": 63,
-  "files": 189,
-  "formats": [
-    "JPG 300 dpi grayscale",
-    "PNG 600 dpi grayscale",
-    "PDF single-page grayscale"
+  "metric": "median adjacent RMS difference divided by pair mean",
+  "before_range": [
+    0.6576425917972935,
+    0.6884278211880802
   ],
-  "missing_files": 0,
-  "grayscale_raster_files": 126,
-  "grayscale_pdf_files": 63,
-  "source_npz_hashes_unchanged": 42,
-  "geometry_metadata_files_matching_latest_desktop_model": 5,
-  "local_vs_publish_copy_sha256_matches": 189,
-  "panel_distance_alignment": "same physical width and 0-3 m axis; s=3-x_model",
-  "geometry_policy": "true plane intersections, analytical schematic; simulation uses 10 mm voxels",
-  "raw_Ex_policy": "original signed field without filtering or gain",
-  "magnitude_policy": "computed from original three component fields after documented bandpass, then late gain"
+  "after_range": [
+    4.5616143040274505e-06,
+    9.265803549625643e-05
+  ],
+  "line_015_lower_panel_median_gray": 205.0
 }

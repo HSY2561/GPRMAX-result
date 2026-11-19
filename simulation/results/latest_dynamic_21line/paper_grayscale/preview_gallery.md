@@ -1,6 +1,6 @@
 # 21 model sections and grayscale vector-magnitude B-scans
 
-Top: true model section. Bottom: Ex/Ey/Ez magnitude recomputed from original fields, with bandpass and late gain.
+Top: model section with steel in rust and EPS in teal. Bottom: 301 computed traces at a common 50 mm realized offset, using the measured GPR2 white-to-black palette.
 
 Distance is aligned from the right start. Depth (top) and time (bottom) are distinct axes. See [method](README.md).
 
